@@ -1,0 +1,3221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/lib/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AP Computer Science Vocabulary</title>
+    <style>
+        .imgUnit {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            border: 5px solid navy;
+            box-shadow: 5px 10px #888888;
+        }
+
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+            display: block;
+        }
+
+        .carouselback {
+            height: 600px;
+            background-image: url("notepaper.png");
+        }
+
+        .carouseldef {
+            width: 90%;
+            padding-left: 10%;
+            text-align: left;
+            justify-content: left;
+            color: darkblue;
+        }
+
+        .carouselh3 {
+            color: darkblue;
+        }
+
+        .tablecarousel {
+            padding-left: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+        }
+
+        .tablecarouseldetail {
+            width: 70%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+        }
+
+        .tablecarouseldetail td {
+            padding: 5px;
+        }
+
+        .tablecarouselborders {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid seashell;
+            border-left: 3px solid seashell;
+            border-collapse: collapse;
+        }
+
+        .tablecarouseltd {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+            border: 3px solid seashell;
+        }
+
+        .tablecarouseltd_detail {
+            padding: 5px;
+            text-align: left;
+            color: navy;
+            border: 3px solid blue;
+        }
+
+        .oomph {
+            font-size: larger;
+            font-weight: bold;
+            color: red;
+        }
+
+        .parent {
+            width: 150px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: lightgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .child {
+            width: 200px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: limegreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .grandchild {
+            width: 300px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: darkgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .bigarrow {
+            margin-left: 100px;
+            font-size: 2em;
+            text-align: left;
+        }
+
+        .codePara {
+            text-align: left;
+            font-weight: bold;
+            padding-left: 10%;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
+
+    <header id="page-hero" class="site-header">
+
+        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+            <div class="container-fluid">
+
+
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+                    aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            </div>
+
+        </nav>
+
+        <section class="layout-hero d-flex align-items-center text-light text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+                        <h3 class="page-section-title">CIT 11200 - Tech Fundamentals Vocabulary</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <article id="page-multicolumn" class="page-section text-center py-5">
+
+
+
+        <section class="layout-multicolumn container">
+
+            <div class="row justify-content-center family-sans text-uppercase">
+
+                <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a href="networks.html" data-highres="images\cable.png">
+                        <img class="layout-image imgUnit" src="images\cable.png" alt="Networks">
+                    </a>
+
+                    <h5 class="layout-title pt-2">Networks</h5>
+                </section>
+
+                <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a data-toggle="modal" data-target="#unit2-modal" data-highres="images\cyberthreat.png" href="#">
+                        <img class="layout-image imgUnit" src="images\cyberthreat.png" alt="Cybersecuriyu">
+                    </a>
+                    <h5 class="layout-title pt-2">Digital Security</h5>
+                </section>
+
+                <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a data-toggle="modal" data-target="#unit3-modal" data-highres="images\codingintroplus.png"
+                        href="#">
+                        <img class="layout-image imgUnit" src="images\codingintroplus.png" alt="Coding">
+                    </a>
+                    <h5 class="layout-title pt-2">Programming</h5>
+                </section>
+
+                <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a data-toggle="modal" data-target="#unit4-modal" data-highres="images/os.png" href="#">
+                        <img class="layout-image imgUnit" src="images/os.png" alt="Unit 4, Iteration">
+                    </a>
+                    <h5 class="layout-title pt-2">Operating Systems</h5>
+                </section>
+
+                <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a data-toggle="modal" data-target="#unit5-modal" data-highres="images/internet.png.png" href="#">
+                        <img class="layout-image imgUnit" src="images/internet.png" alt="Unit 5, Writing Classes">
+                    </a>
+                    <h5 class="layout-title pt-2">The Internet</h5>
+                </section>
+
+                <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a data-toggle="modal" data-target="#unit6-modal" data-highres="images/gof.png" href="#">
+                        <img class="layout-image imgUnit" src="images/gof.png" alt="Unit 6, Arrays">
+                    </a>
+                    <h5 class="layout-title pt-2">Gift Of Fire</h5>
+                </section>
+
+
+
+
+            </div>
+
+        </section>
+    </article>
+
+
+
+
+
+
+
+
+    <footer class="site-footer bg-secondary text-light d-flex justify-content-center">
+
+
+
+    </footer>
+
+
+
+    <!--   Modals for each unit -->
+    <article id="unit1-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit1" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Variable</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Named location in computer memory. </p>
+                                <p class="carouseldef">Stores data for use in application. </p>
+                                <p class="carouseldef">Java is statically typed, meaning variables must be declared,
+                                    with a <i>data type</i>, before they are used.</p>
+                                <p class="carouseldef">&nbsp;&nbsp;int counter;</p>
+                                <p class="carouseldef">counter is a variable, able to store the <i>data type</i>
+                                    referenced as <i>int</i>.</p>
+                                <p class="carouseldef">&nbsp;&nbsp;boolean isValid;</p>
+                                <p class="carouseldef">isValid is a variable, able to store the <i>data type</i>
+                                    referenced as <i>boolean</i>.</p>
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Data Type</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Descriptive term, indicating what can be done with data, how much
+                                    space required to store it. For instance <i>int</i> and <i>double</i> variables can
+                                    be divided, added, multiplied. The <i>boolean</i> data type describes
+                                    variables that can store one of two values, true or false. Basic data types in AP
+                                    Computer Science curriculum (A) are int, boolean and double.</p>
+                                <p class="carouseldef">The <i>int</i> data type - 4 bytes, whole numbers from
+                                    -2,147,483,648 to 2,147,483,647.</p>
+                                <p class="carouseldef">The double data type - 8 bytes, fractional numbers, 15 decimal
+                                    digits.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Primitive Data Type</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A data type of known storage requirement, like int, boolean,
+                                    double.</p>
+                                <p class="carouseldef">The <i>int</i> data type takes up 4 bytes of storage and
+                                    represents whole numbers from -2,147,483,648 to 2,147,483,647.</p>
+                                <p class="carouseldef">The <i>double</i> data type takes up 8 bytes of storage and
+                                    represents fractional numbers. Sufficient for storing 15 decimal digits.</p>
+                                <p class="carouseldef">The <i>boolean</i> data type only requires 1 bit but in practice
+                                    may be take up a byte or nybble.</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Reference</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Think of a reference as the starting memory location for storing
+                                    data of an unpredicted size</p>
+                                <p class="carouseldef">A non-null reference requires an allocation of memory, involving
+                                    some initialization, or the use of the new operator.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">boolean</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Primitive Data type having only values of either true or false.
+                                    Named for Boolean logic, a branch of mathematics developed by George Boole, an
+                                    Anglo-Irish mathematician.</p>
+                                <p class="carouseldef">A boolean variable can be used to store a value of true or false,
+                                    this making the <i>boolean</i> data type useful for conditionals.</p>
+                                <p class="carouseldef">
+                                    <br> boolean isSenior = age > 65;
+
+                                </p>
+                                <p class="carouseldef">If <i>age</i> is 67, then <i>isValid</i> is true. If <i>age</i>
+                                    is 45 then <i>isValid</i> is false.</p>
+
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">int</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Primitive numeric data Data type. </p>
+                                <p class="carouseldef"> Occupies 32 bits, or 4 bytes, and can store numbers from -2
+                                    <sup>31</sup> to 2<sup>31</sup> - 1. Whole numbers only.
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">double</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Primitive numeric data Data type. </p>
+                                <p class="carouseldef">Occupies 64 bits and can store numbers from -2<sup>63</sup> to
+                                    2<sup>64</sup> - 1. Fractional parts included.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Parameter</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">Data that is passed to a method. </p>
+                                <p class="carouseldef"> Formal parameters are described in method defintion, actual
+                                    parameters are passed to method in calling code.
+                                    <br> <i>rate</i> and <i>balance</i> are formal parameters,<br><br> public double
+                                    interestCalculated(double rate, double balance) { ...<br>&nbsp;&nbsp;&nbsp;
+                                    }<br><br>
+                                    <br> ... actual parameters are in the call,<br><br> double interest =
+                                    interestCalculated(0.03, 12000);
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Operators</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A symbol used to perform an operation,</p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td>addition</td>
+                                        <td>+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>subtraction</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>multiplication</td>
+                                        <td>*</td>
+                                    </tr>
+                                    <tr>
+                                        <td>division</td>
+                                        <td>/</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>modulo</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>equality</td>
+                                        <td>==</td>
+                                    </tr>
+                                    <tr>
+                                        <td>assignment</td>
+                                        <td>=</td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Constant</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A variable, value of which cannot be changed after
+                                    initialization. Commonly represented in uppercase. Indicated with keyword final.
+                                </p>
+                                <p class="carouseldef"><br>final int GOAL_HEIGHT = 8;</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Class</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A template for creating an object or instance.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Object</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A data model created from a class.</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Casting</h3>
+                                <h6>Unit 1, Primitives</h6>
+                                <p class="carouseldef">A way to 'temporarily convert' or represent data as another type.
+                                    For example,
+                                    <br> double height = 34.5;<br> int val = (int) height; // This is a narrowing
+                                    conversion<br> int width = 5;<br> double side = (double)width; // This is a widening
+                                    conversion<br>
+                                </p>
+                                <p>Note, when an int is typecast to a double, information is not lost. However, when a
+                                    double is typecast to an int, the fractional part is truncated.</p>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                        <a class="carousel-control-prev" href="#carouselContentunit1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContentunit1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!----------------------------------------------------------------------------->
+
+
+
+    <!--   Modals for each unit -->
+    <article id="unit2-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit2" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">OOP</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Object Oriented Programming. A software engineering paradigm
+                                    (technique) in which templates called classes are used to create data models called
+                                    objects. The application is built around the objects.</p>
+                                <p class="carouseldef">
+                                    The 4 tenets of OOP are<br>
+                                    &#x2610;
+                                    Abstraction -
+
+                                    Big ideas as classes & objects,in OOP framework<br>
+
+                                    &#x2610; Polymorphism -
+
+                                    Different objects responding in specialized ways
+                                    to same request<br>
+
+                                    &#x2610;Inheritance -
+                                    Reuse of class code base in parent class, by child class<br>
+
+                                    &#x2610;Encapsulation -
+                                    Subsuming data & logic inside class/object</td>
+
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Class</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Software template from which data models called objects created
+                                </p>
+                                <p class="carouseldef">
+                                    A class specifies
+                                <table class="tablecarouseldetail">
+                                    <tr>
+                                        <td>
+                                            Attributes
+                                        </td>
+                                        <td>Features/characteristics of class or object</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Methods</td>
+                                        <td>Blocks of code, specify what the class or object can do</td>
+                                    </tr>
+
+                                </table>
+                                </p>
+                                <p class="carouseldef">A Class, <i>SoccerPlayer</i>, is instantiated (newed up) to
+                                    create an object, <i>player</i>.</p>
+                                <p class="carouseldef">
+                                    SoccerPlayer player = <br> &nbsp;&nbsp;new SoccerPlayer("Harry Kane", 26, "Forward",
+                                    "Spurs");
+                                </p>
+
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Object, Instance</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Data model created from software template called class. An object
+                                    (instance) is 'instantiated' or 'newed up' from a class.</p>
+                                <p class="carouseldef">
+                                    An object has
+                                <table class="tablecarouseldetail">
+                                    <tr>
+                                        <td>attributes</td>
+                                        <td>properties of the object</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            instance methods
+                                        </td>
+                                        <td>
+                                            blocks of code that can be called on the object, and describe what the
+                                            object can do
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="carouseldef">
+                                    Instance must be newed up before instace data or methods can be accessed.
+                                </p>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">this</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Keyword, <i>this</i> refers to the current object.</p>
+                                <p class="carouseldef">
+                                    Below, <i>this</i> is used to set the value of an attribute to the value passed into
+                                    the block of code.
+
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private int age;<br> ...
+
+                                    <br> public void setAge(int age) {<br> this.age = age;<br> }
+                                    <br> }
+
+                                    <br>
+                                </p>
+
+
+                            </div>
+
+
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Attribute</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Characteristic of an object or a class. Other terms - instance
+                                    variable, class variable, property, data member, instance data, class data </p>
+                                <p class="carouseldef">
+                                    // <i>age</i> is an instance variable, <i>club</i> is a class or static variable
+                                    public class SoccerPlayer {<br> private int age;<br> static String club = "Spurs";
+                                    ...
+                                    <br> public int getAge() {<br> return this.age;<br> }
+                                    <br> }
+
+                                    <br>
+                                </p>
+
+                                <p class="carouseldef">
+                                    SoccerPlayer player = <br>&nbsp;&nbsp;new SoccerPlayer(....);<br> int playerAge =
+                                    player.getAge();<br>
+                                </p>
+                                <p class="carouseldef"> String clubName = SoccerPlayer.club;
+                                </p>
+                            </div>
+
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Method</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Block of code, given a label, bound to object (instance method),
+                                    or class (class method). </p>
+                                <p class="carouseldef">A method is described as something the object can do. </p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private int age;<br> ...
+                                    <br> public void messageCoach() {<br> ...
+                                    <br> }
+                                    <br><br> public static String codeOfConduct() {<br> System.out.println("Practice
+                                    hours are reserved ...")<br> }
+                                    <br> }
+
+                                    <br>
+                                </p>
+                                <p class="carouseldef">
+                                    SoccerPlayer player = new SoccerPlayer();<br> player.messageCoach();
+                                    <br> SoccerPlayer.codeOfConduct();
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Constructor</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Special method, instantiates or 'news up' object from class.
+                                </p>
+                                <p class="carouseldef">If no constructor is defined, the default constructor can be
+                                    used. This constructor is defined at Object level. Once a constructor is defined in
+                                    the class, the default constructor can no longer be used.
+                                </p>
+                                <p class="carouseldef">
+                                    public SoccerPlayer(String name, int age,<br> String position, String club) {<br>
+                                    this.name = name;<br> this.age = age;<br> this.position = position;<br> this.club =
+                                    club;<br> }
+                                    <br>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Getter or Accessor</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Method, returns the value of a private attribute </p>
+                                <p class="carouseldef">Attributes are declared
+                                    <i>private</i> in order to protect them from direct access. Therefore methods that
+                                    are public get the value of the attribute.
+                                </p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private String name;<br> ...
+                                    <br> public String getName() {<br> return this.name;<br> }
+                                    <br>
+                                </p>
+                                <p class="carouseldef">The accessor or getter returns the value of the attribute, the
+                                    return type mirrors the type or class of the attribute.
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Setter or Mutator</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Method, sets value of a private attribute. </p>
+                                <p class="carouseldef">Attributes are declared <i>private</i> to protect them from
+                                    direct access. Therefore methods that are public are necessary to set the value of
+                                    the attribute.</p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private String name;<br> ...
+                                    <br> public void setName(String newName) {<br> this.name = newName;<br> }
+                                    <br>
+                                </p>
+                                <p class="carouseldef">Mutator or setter does not have a return, parameter mirrors the
+                                    type or class of the attribute.
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Overloaded Method</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Redeclaration of existing method, with different parameter list.
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouseldetail">
+                                    <tr>
+                                        <td>
+
+                                            public SoccerPlayer() {<br> ....
+                                            <br> }
+                                            <br>
+                                            <br> public SoccerPlayer(String name, int age) {<br> this.name = name;<br>
+                                            this.age = age;<br> }
+                                            <br>
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> public void requirements() {<br> ....
+                                            <br> }
+                                            <br><br> public void requirements(SoccerPlayer player) {<br> ....
+                                            <br> }
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                </p>
+                            </div>
+
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Accessibility Modifier</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Govern visibility of class, method, attribute. </p>
+                                <p class="carouseldef"><i>private</i> gives access only within class, <i>public</i>
+                                    gives access outside of class. Other accessibility modifiers, outside scope of
+                                    course. </p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private String name;<br> ...
+                                    <br> public String getName() { return name; }
+                                </p>
+                                <p class="carouseldef">Client code can new up an instance of the SoccerPlayer class, but
+                                    cannot directly access name attribute because it is private, instead, must call the
+                                    getName() method, which is public.</p>
+                            </div>
+
+
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">String</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">Class Java uses to represent String instances - strings are a
+                                    bunch of characters, like "Robbie Roe". String is a reference type, used to create
+                                    an instance. String instances can be created using the new operator, <br><br> String
+                                    str1 = new String("Have a great day!");<br><br> ... and by using String literals,
+                                    String str2 = "Have a great day!";
+                                </p>
+                                <p class="carouseldef">String methods: length(), indexOf(..), substring(..), equals(..),
+                                    compareTo(..)</p>
+                                <p class="carouseldef">String instances are immutable, you cannot change them. When you
+                                    'change' aString instance, a new String instance is created.</p>
+
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Keyword, static</h3>
+                                <h6>Unit 2, Using Objects</h6>
+                                <p class="carouseldef">
+                                    This keyword indicates that an attribute or a method s bound to a class, not an
+                                    object. As such, no instantiation is required to access the static quantity. For
+                                    example, <br><br>
+                                <pre class="carouseldef">
+        public class SoccerPlayer {
+            <div class="">...</div>
+            static int numberOfPlayers;
+        }
+    
+    In the client code, 
+
+        int playersTotal = SoccerPlayer.numberOfPlayers;
+        
+                                </pre>
+
+
+                            </div>
+
+                        </div>
+
+
+                        <a class="carousel-control-prev" href="#carouselContentunit2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContentunit2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!----------------------------------------------------------------------------->
+
+
+    <!--   Modals & Carousels for each unit -->
+    <article id="unit3-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit3" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Boolean</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">Derived from the creator of Boolean Algebra, George Boole, the
+                                    term refers to outcomes having values of either true or false, nothing else.</p>
+                                <p class="carouseldef">Boolean algebra is the basis of the design of digital computer
+                                    circuits, and is central to the flow of logic in a computer program.</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Boolean Expression</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">Logical statement that is either true or false.
+                                </p>
+                                <p class="carouseldef">Like, <br>goals &gt; 15</p>
+                                <p class="carouseldef">Compound boolean expressions are composed of singleton
+                                    expressions joined by Boolean operators, like AND(&& in Java), OR (|| in Java).</p>
+                                <p class="carouseldef">
+                                <table class="tablecarouseldetail">
+                                    <tr>
+                                        <td>boolean isSeniorKeeper = (age &gt; 21) && (position.equals("Keeper");</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            boolean isValidPlayer = (club.equals("Training") || (club.equals("Spurs");
+                                        </td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Boolean Operators</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">Operators that act on boolean variables. </p>
+                                <p class="carouseldef">The 3 basic Boolean operators are
+                                <table class="tablecarouseldetail">
+                                    <tr>
+                                        <td>AND (Java, &&),</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            OR (Java, ||)
+                                        </td>
+                                    </tr>
+                                    <tr>
+
+                                    </tr>
+
+                                    <td>NOT (Java, !)</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">Boolean operators have associated truth tables that map the
+                                    values of the operands to the result when the Boolean operator is applied.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">AND Operation</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">The AND operation is represented by && in Java. Only true if all
+                                    operands are true.</p>
+                                <p class="carouseldef">
+                                    <img class="imgUnit" src="boolean1.png">
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">OR Operation</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">
+                                    <img class="imgUnit" src="boolean2.png">
+                                </p>
+                            </div>
+
+
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">NOT Operation</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">
+                                    <img class="imgUnit" src="boolean3.png">
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">One Way Selection Statement</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">
+                                    Statement that makes a single decision based on boolean expression.
+                                    <img class="imgUnit" src="1way.png">
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Two Way Selection Statement</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">Statement that supports decision based on the value of a boolean
+                                    expression, and a single alternative.
+                                    <img class="imgUnit" src="2way.png">
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Multi-Way Selection Statement</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">Statement supporting multiple decisions based on value of
+                                    multiple boolean expressions.
+                                    <img class="imgUnit" src="multiwayselect.png">
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+
+                                <h3 class="carouselh3">Alias</h3>
+                                <h6>Unit 3, Boolean Expressions & If</h6>
+                                <p class="carouseldef">Two objects are aliases of each other if they refer to the same
+                                    memory location. In the diagram, player1 and player2 end up as aliases.
+                                    <img class="imgUnit" src="aliasesdiagram.png">
+                                </p>
+                            </div>
+
+
+
+                        </div>
+
+
+
+
+
+                        <a class="carousel-control-prev" href="#carouselContentunit3" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContentunit3" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!----------------------------------------------------------------------------->
+
+
+    <!--   Modals for each unit -->
+    <article id="unit4-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit4" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Iteration</h3>
+                                <h6>Unit 4, Iteration</h6>
+                                <p class="carouseldef">Action that is repetetive, happens in a loop.</p>
+                                <p class="carouseldef">Iteration enables repeated execution of a block of code. Loop
+                                    condition governs execution of the loop, and <i>sentry</i> variable or loop variable
+                                    is changed each time through the loop. The loop variable forms a part of
+                                    the loop condition and determines how many times the loop executes.</p>
+                                <p class="carouseldef">If a loop condition is always true, the loop never exits.</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Loop</h3>
+                                <h6>Unit 4, Iteration</h6>
+                                <p class="carouseldef">Term given to a construct in computer programming in which a
+                                    block of code is repeated either a set number of times or infinitely.
+                                </p>
+                                <p class="carouseldef">A loop in computer programming enables the repeated execution of
+                                    a block of code. Typically, a loop condition governs execution of the loop, and a
+                                    <i>sentry</i> variable or loop variable is changed each time through the
+                                    loop. The loop variable forms a part of the loop condition and determines how many
+                                    times the loop executes.
+                                </p>
+                                <p class="carouseldef">If a loop condition is always true, the loop never exits.</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">While Loop</h3>
+                                <h6>Unit 4, Iteration</h6>
+                                <p class="carouseldef">A specific loop that uses the while keyword, a loop variable
+                                    (sentry variable) and a boolean expression, to govern how many times the loop is
+                                    executed. Loop runs while the boolean expression (loop condition) is true.
+
+                                    <img class="imgUnit" src="whileforcard.png">
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">For Loop</h3>
+                                <h6>Unit 4, Iteration</h6>
+                                <p class="carouseldef">A specific loop that uses the for keyword, a loop variable or
+                                    sentry variable and a boolean expression to govern how many times the loop is
+                                    executed. </p>
+                                <p class="carouseldef">The for loop construct supports initialization and allows for
+                                    specification of an action to be taken each time through the loop.</p>
+                                <img class="imgUnit" src="forforcard.png">
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Infinite Loop</h3>
+                                <h6>Unit 4, Iteration</h6>
+                                <p class="carouseldef">A loop that that does not have an exit point, the loop condition
+                                    is always true - this results in a loop that cycles infinitely.
+                                    <img class="imgUnit" src="infiniteloop.png">
+                                </p>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+
+                        <a class="carousel-control-prev" href="#carouselContentunit4" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContentunit4" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!----------------------------------------------------------------------------->
+
+
+
+    <!--   Modals for each unit -->
+    <article id="unit5-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit5" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Class</h3>
+                                <h6>Unit 5, Writing Classes</h6>
+                                <p class="carouseldef">A software template in Object Oriented Programming. </p>
+                                <p class="carouseldef">Software models called objects (or instances) are made from a
+                                    class, like an achitectural blueprint is used to build houses.</p>
+                                <p class="carouseldef">A class is a building block of Object Oriented Programming, OOP.
+                                </p>
+                                <p class="carouseldef">The 4 tenets of OOP are
+
+                                    <br>
+                                    &#x2610;Abstraction - Pulling out big ideas, forming classes<br>
+
+                                    &#x2610;Polymorphism - Objects specializing responses to same request
+                                    <br>
+
+                                    &#x2610;Inheritance - Reuse of class as basis for another class <br>
+
+                                    &#x2610; Encapsulation - Subsuming logic, data inside class or object<br>
+
+
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Object</h3>
+                                <h6>Unit 5, Writing Classes</h6>
+                                <p class="carouseldef">Software model made from instructions in class. Also called
+                                    instance. Object is instantiated, or 'newed up' based on class.
+                                </p>
+                                <p class="carouseldef">
+                                    SoccerPlayer player = new SoccerPlayer();
+                                </p>
+                                <p class="carouseldef">Class is <i>SoccerPlayer</i>, <i>player</i> is object.</p>
+                                <p class="carouseldef">An instance may have instance variables and instance methods.
+                                    Instance variables may be protected by accessibility modifier, viewed or changed by
+                                    getters and setters.</p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private String name;<br> ...
+                                    <br> public String getName() {<br> return this.name;<br> }
+                                    <br>
+                                </p>
+
+                                <p class="carouseldef">Instance is a reference to an area of memory.
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Attribute</h3>
+                                <h6>Unit 5, Writing Classes</h6>
+                                <p class="carouseldef">A characteristic or feature of a class or object. Attributes
+                                    belonging to the instance are also termed
+                                    <br> instance variable
+                                    <br> data member
+                                    <br> instance data
+                                    <br> property
+
+                                </p>
+
+                                <p class="carouseldef">By convention, attributes protected with <i>private</i>
+                                    accessibility modifier. Methods called Getters and Setters get and set attribute
+                                    values from outside the class. </p>
+                                <p class="carouseldef">Below, <i>name</i>, instance variable. Keyword <i>static</i>
+                                    indicates <i>division</i>, class variable.</p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private String name;<br> public static String
+                                    division = "Premier League"; ...
+                                    <br> public String getName() {<br> return this.name;<br> }
+                                    <br>
+                                </p>
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Method</h3>
+                                <h6>Unit 5, Writing Classes</h6>
+                                <p class="carouseldef">Block of code tied to object or class, given signature describing
+                                    visibility (like public or private), return type and name.
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private String name;<br> ...
+                                    <br> public String getName() {<br> return this.name;<br> }
+                                    <br> public static associatedSport() {<br> return "Soccer aka European
+                                    Football";<br> }
+                                    <br>
+                                </p>
+                                <p class="carouseldef"><i>getName</i>, instance method, called on the instance.
+                                    <i>associatedSport</i>, class method, called on the class.
+                                </p>
+                                <p class="carouseldef">
+                                    SoccerPlayer player = new SoccerPlayer();<br> ...
+                                    <br> String playerName = player.getName();<br> String sportCategory =
+                                    SoccerPlayer.associatedSport();<br>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Constructor</h3>
+                                <h6>Unit 5, Writing Classes</h6>
+                                <p class="carouseldef">Special method, instantiates new object based on class.
+                                    Constructor described as empty constructor if no parameters, and parameterized
+                                    constructor if it has a parameter list.
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private String name;<br> ....
+                                    <br> public SoccerPlayer() {<br> }
+                                    <br> public SoccerPlayer(String name, int age) {<br> this.name = name;<br> this.age
+                                    = age;<br> }
+                                    <br>
+                                </p>
+                                <p class="carouseldef">Constructors are called when object is newed up from class,<br>
+                                    SoccerPlayer player = new SoccerPlayer();<br> SoccerPlayer player2 = new
+                                    SoccerPlayer("Harry Kane", 27);</p>
+                                <p class="carouseldef">These constructors are <i>overloaded</i>.</p>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+
+                        <a class="carousel-control-prev" href="#carouselContentunit5" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContentunit5" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!----------------------------------------------------------------------------->
+
+    <!--   Modals for each unit -->
+    <!-- ARRAY VOCAB -->
+    <article id="unit6-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit6" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Data Structure</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Feature of programming languages, supports storing and processing
+                                    data, showing relationships.</p>
+                                <p class="carouseldef">Examples - arrays, Arraylist objects, 2 Dimensional arrays.</p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">00</td>
+                                        <td class="tablecarouseltd">01</td>
+                                        <td class="tablecarouseltd">02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouseltd">10</td>
+                                        <td class="tablecarouseltd">11</td>
+                                        <td class="tablecarouseltd">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouseltd">20</td>
+                                        <td class="tablecarouseltd">21</td>
+                                        <td class="tablecarouseltd">22</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">Data structures facilitate data manipulation and processing. </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Array</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Data structure that stores a collection of elements, each
+                                    identified by an array index.
+                                </p>
+                                <p class="carouseldef">
+                                    Arrays are declared with the data type or class, and must be newed up with the new
+                                    operator, or initialized with an initialization list or initializer list.
+                                </p>
+                                <p class="carouseldef">
+                                    String[] values = {"item #1", "item #2", "item #3"};
+                                </p>
+                                <p>or</p>
+                                <p class="carouseldef">
+                                    String[] values = new String[3];
+                                    <br> values[0] = "item #1";<br> values[1] = "item #2";<br> values[2] = "item
+                                    #3";<br>
+                                </p>
+
+                                <p class="carouseldef">Arrays are used to store multiple quantities, representing a
+                                    programming convenience and alternative to declaring and managing multiple
+                                    variables.</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Array Index, Subscript </h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">A whole number valid in range 0 to 1 less than the length of the
+                                    array. Identifies array element.
+
+                                </p>
+
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                    </tr>
+                                </table>
+                                </p>
+
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td>&nbsp;index 0 - </td>
+                                        <td>index 1 - </td>
+                                        <td>index 2 </td>
+                                    </tr>
+                                </table>
+                                </p>
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Out Of Bounds Error</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Condition, index less than 0 or greater than or equal to number
+                                    of array elements.
+
+                                </p>
+
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                    </tr>
+                                </table>
+                                </p>
+
+                                <p class="carouseldef">
+                                    &nbsp;&nbsp;&nbsp;
+                                <table class="tablecarousel" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td>&nbsp;&nbsp;&nbsp;index 0 - </td>
+                                        <td>index 1 - </td>
+                                        <td>index 2 - </td>
+                                        <td style="color: red; text-decoration: line-through;">index 3 !!! </td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">Use the length property of Array to ensure that only valid index
+                                    values are used. </p>
+                                <p class="carouseldef">&nbsp;&nbsp;&nbsp;0 &lt;= index &lt; array.length </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Array Element</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Entity (primitive or object) array contains, identified by array
+                                    index.
+
+                                </p>
+                                <p class="carouseldef">
+                                    int[] nums = {1,222,23};
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">1</td>
+                                        <td class="tablecarouseltd">222</td>
+                                        <td class="tablecarouseltd">23</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td>numbers[0] is 1, the array element at index 0 is 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>numbers[1] is 222</td>
+                                    </tr>
+                                    <tr>
+                                        <td>numbers[2] is 23</td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Traverse Array</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Sequencing through the elements of array, typically using a loop.
+
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td cellspan="2" style="text-align: center;">while index within bounds<br>
+                                            &nbsp;&nbsp;use index to access array element<br> &nbsp;&nbsp;change value
+                                            of index</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">
+                                            <br> int[] numbers = new int[100];<br> for (int index = 0; index &lt;
+                                            numbers.length; index++) { <br>
+                                            &nbsp;&nbsp;&nbsp;System.out.print(numbers[index]);
+                                            <br> &nbsp;&nbsp;&nbsp;}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">
+                                            <br> int[] numbers = new int[100];<br> int index = 0;<br> while (index
+                                            &lt;numbers.length ) {<br> &nbsp;&nbsp;&nbsp;
+                                            System.out.print(numbers[index]); <br>&nbsp;&nbsp;&nbsp; index++;
+                                            <br> &nbsp;&nbsp;&nbsp;}
+                                        </td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Enhanced For Loop</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Loop, sequences through a collection, an array, referring to the
+                                    items in the array in sequence.
+
+                                </p>
+                                <p class="carouseldef">
+                                    <br>for (Item item : items) <br> &nbsp;&nbsp;process(item)
+                                </p>
+                                <p class="carouseldef">Note that <i>Item</i> represents either a primitive data type or
+                                    a Class name, corresponding to the data type or object contained by the array.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Populate Array</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Add elements to the array.
+                                </p>
+                                <p class="carouseldef">
+                                    SoccerPlayer[] team = new SoccerPlayer[3];
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">null</td>
+                                        <td class="tablecarouseltd">null</td>
+                                        <td class="tablecarouseltd">null</td>
+                                    </tr>
+                                </table>
+                                </p>
+
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td>&nbsp;index 0 - </td>
+                                        <td>index 1 - </td>
+                                        <td>index 2 </td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                    The array can be populated by direct assignments,
+                                </p>
+                                <p class="carouseldef">
+                                    team[index] = new SoccerPlayer("Harry Kane", 26, "Forward","Spurs");
+                                </p>
+                                <p class="carouseldef">
+                                    ... or by using an initializer list when the array is declared, after newing up
+                                    instances of the class,
+                                </p>
+                                <p class="carouseldef">
+                                    SoccerPlayer[] team = {player1, player2, player3};
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Linear Search</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Search algorithm, sequences through array, comparing each element
+                                    to target.
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                        <td class="tablecarouseltd">item #4</td>
+                                        <td class="tablecarouseltd">.....</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                    start at index 0<br> while (index in bounds) { <br> &nbsp;&nbsp; check if element at
+                                    index equals target<br> &nbsp;&nbsp;if it does, take action,
+                                    <br>&nbsp;&nbsp;&nbsp;else increase index &nbsp;&nbsp;
+                                    <br>&nbsp;&nbsp;&nbsp;}
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Binary Search</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Search Algorithm, assumes sorted array. Splits array in half
+                                    repetitively, to find target.
+                                </p>
+                                <p class="carouseldef">
+                                    Looking for 55:
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">10</td>
+                                        <td class="tablecarouseltd">11</td>
+                                        <td class="tablecarouseltd">22</td>
+                                        <td class="tablecarouseltd">33</td>
+                                        <td class="tablecarouseltd">44</td>
+                                        <td class="tablecarouseltd">55</td>
+                                        <td class="tablecarouseltd">77</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">10</td>
+                                        <td class="tablecarouseltd">11</td>
+                                        <td class="tablecarouseltd">22</td>
+                                        <td class="tablecarouseltd" style="color:red; font-style: italic;">33</td>
+                                        <td class="tablecarouseltd">44</td>
+                                        <td class="tablecarouseltd">55</td>
+                                        <td class="tablecarouseltd">77</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">10</td>
+                                        <td class="tablecarouseltd">11</td>
+                                        <td class="tablecarouseltd">22</td>
+                                        <td class="tablecarouseltd">33</td>
+                                        <td class="tablecarouseltd">44</td>
+                                        <td class="tablecarouseltd"
+                                            style="color:red; font-style: italic; font-size:larger">55</td>
+                                        <td class="tablecarouseltd">77</td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Insert Sort</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Sorting algorithm, relies on inserting subsequent items into
+                                    sorted part of list. O(n<sup>2</sup>), &#937;(n).
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">3</td>
+                                        <td class="tablecarouseltd">-1</td>
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+                                        <td class="tablecarouseltd">4</td>
+                                        <td class="tablecarouseltd">7</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+                                        <td class="tablecarouseltd">-1</td>
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">2</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">9</td>
+
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">2</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">9</td>
+
+
+
+                                    </tr>
+                                </table>
+                                <br>
+
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Select Sort</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Sorting algorithm, swaps elements to sort list. O(n<sup>2</sup>),
+                                    &#937;(n<sup>2</sup>).
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">3</td>
+                                        <td class="tablecarouseltd">-1</td>
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd">3</td>
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">3</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">9</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">2</td>
+
+                                        <td class="tablecarouseltd">9</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">2</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">9</td>
+
+
+
+                                    </tr>
+                                </table>
+                                <br>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">O(expression)</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Big O. </p>
+                                <p class="carouseldef">
+                                    Symbol describing worst case scenario in terms of swapping/comparing values in
+                                    sort/search process.
+                                </p>
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td>Linear Search</td>
+                                        <td>O(n)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Selection Sort</td>
+                                        <td>O(n<sup>2</sup>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Insert Search</td>
+                                        <td>O(n<sup>2</sup>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Binary Search</td>
+                                        <td>O(log n)</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">&#937;(expression)</h3>
+                                <h6>Unit 6, Arrays</h6>
+                                <p class="carouseldef">Big &#937;. </p>
+                                <p class="carouseldef">Symbol describing best case scenario in terms of
+                                    swapping/comparing values in sort process.
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td>Linear Search</td>
+                                        <td>&#937;(1)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Selection Sort</td>
+                                        <td>&#937;(n<sup>2</sup>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Insert Search</td>
+                                        <td>&#937;(n)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Binary Search</td>
+                                        <td>&#937;(1)</td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <a class="carousel-control-prev" href="#carouselContentunit6" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselContentunit6" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <!-- ARRAYLIST VOCAB -->
+    <article id="unit7-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit7" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Data Structure</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Supports storing and processing data, showing relationships.</p>
+                                <p class="carouseldef">Examples - arrays, Arraylist objects, 2 Dimensional arrays.</p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">00</td>
+                                        <td class="tablecarouseltd">01</td>
+                                        <td class="tablecarouseltd">02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouseltd">10</td>
+                                        <td class="tablecarouseltd">11</td>
+                                        <td class="tablecarouseltd">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouseltd">20</td>
+                                        <td class="tablecarouseltd">21</td>
+                                        <td class="tablecarouseltd">22</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">Data structures facilitate data manipulation and processing. </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">ArrayList</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Data structure, stores collection of references, each identified
+                                    by index. No primitives. Flexible, elements can be added, modified and removed.
+                                </p>
+                                <p class="carouseldef">
+                                    ArrayLists declared with class <i>ArrayList</i>, newed up with new operator.
+                                </p>
+                                <p><i>ArrayList</i> class should be imported: import java.util.ArrayList;</p>
+                                <p class="carouseldef">
+                                    ArrayList values = new ArrayList(); // An ArrayList instance of objects<br>
+                                    ArrayList&lt;String&gt; strValues = new ArrayList&lt;String&gt;(); // .. Strings<br>
+                                    ArrayList&lt;SoccerPlayer&gt; players = new ArrayList&lt;SoccerPlayer&gt;();
+                                    // .. SoccerPlayer instances<br>
+
+                                </p>
+                                <p>Populate the ArrayList using <i>add method</i></p>
+                                <p class="carouseldef">
+                                    strValues.add("item #1");<br> <br>
+                                </p>
+                                <p>or, add multiple elements at once,</p>
+                                <p>
+                                    ArrayList
+                                    <String> strValues = new ArrayList&lt;String&gt;Arrays.asList("item #1", "item #2",
+                                        "item #3"));
+                                </p>
+
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">ArrayList Index, Subscript </h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">A whole number valid in range 0 to 1 less than the size of the
+                                    array. Identifies array element.
+
+                                </p>
+                                <p>Use the <i>size()</i> method to find the number of elements in the ArrayList.</p>
+
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                    </tr>
+                                </table>
+                                </p>
+
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td>&nbsp;index 0 - </td>
+                                        <td>index 1 - </td>
+                                        <td>index 2 </td>
+                                    </tr>
+                                </table>
+                                </p>
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Out Of Bounds Error</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Condition, index less than 0 or greater than or equal to number
+                                    of ArrayList elements.
+
+                                </p>
+
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                    </tr>
+                                </table>
+                                </p>
+
+                                <p class="carouseldef">
+                                    &nbsp;&nbsp;&nbsp;
+                                <table class="tablecarousel" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td>&nbsp;&nbsp;&nbsp;index 0 - </td>
+                                        <td>index 1 - </td>
+                                        <td>index 2 - </td>
+                                        <td style="color: red; text-decoration: line-through;">index 3 !!! </td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">Use the <i>size</i> method to ensure that only valid index values
+                                    are used. </p>
+                                <p class="carouseldef">&nbsp;&nbsp;&nbsp;0 &lt;= index &lt; arrayList.size() </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Concurrent Modification Exception</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Condition, list item has been removed or changed in some manner,
+                                    while also being accessed.
+
+                                </p>
+                                <p>Typically happens when list item is accidentally removed by program code, and same
+                                    element is being processed at the same time.</p>
+
+                                <p class="carouseldef">
+                                    for (SoccerPlayer player : players) {<br> &nbsp;&nbsp;players.remove(player);
+                                    <br> &nbsp;&nbsp;System.out.println(player.getName());
+                                    <br> &nbsp; }
+                                </p>
+
+
+                                <p class="carouseldef">Take care when processing ArrayList elements!. </p>
+
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">ArrayList Element</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Entity (primitive or object) array contains, identified by array
+                                    index.
+
+                                </p>
+                                <p class="carouseldef">
+                                    ArrayList&lt;Integer&gt; numbers contains [1,22,23]
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">1</td>
+                                        <td class="tablecarouseltd">222</td>
+                                        <td class="tablecarouseltd">23</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td>numbers.get(0) returns 1, the list element at index 0 is 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>numbers.get(1) returns 222</td>
+                                    </tr>
+                                    <tr>
+                                        <td>numbers.get(2) returns 23</td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Traverse ArrayList</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Sequencing through the elements of a list, typically using a
+                                    loop.
+
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td cellspan="2" style="text-align: center;">while index within bounds<br>
+                                            &nbsp;&nbsp;use index to access list element<br> &nbsp;&nbsp;change value of
+                                            index</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">
+                                            <br> ArrayList&lt;Integer&gt; numbers= new ArrayList&lt;Integer&gt;(); //
+                                            Next, 100 items added!<br> for (int index = 0; index &lt; numbers.size();
+                                            index++) { <br> &nbsp;&nbsp;&nbsp;System.out.print(numbers.get(index));
+                                            <br> &nbsp;&nbsp;&nbsp;}
+                                        </td>
+                                    </tr>
+
+                                </table>
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Enhanced For Loop</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Loop, sequences through a collection, a list, referring to the
+                                    items in the array in sequence.
+
+                                </p>
+                                <p class="carouseldef">
+                                    <br>for (Item item : items) <br> &nbsp;&nbsp;process(item)
+                                </p>
+                                <p class="carouseldef">Note that <i>Item</i> represents a Class name, corresponding to
+                                    the object contained by the list.</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Populate ArrayList</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Add elements to the list.
+                                </p>
+                                <p class="carouseldef">
+                                    ArrayList&lt;SoccerPlayer&gt; team = new ArrayList&lt;SoccerPlayer&gt;(); </p>
+                                <p>team.add(new SoccerPlayer("Harry Kane", 27, "Forward", "Spurs"));</p>
+
+
+                                <p class="carouseldef">
+                                    ... or by using one of several tricks to populate the list, like,
+                                </p>
+                                <p class="carouseldef">
+                                    ArrayList&lt;SoccerPlayer&gt; team = new ArrayList&lt;&gt;(Arrays.asList(player1,
+                                    player2, player3));
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Linear Search</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Search algorithm, sequences through list, comparing each element
+                                    to target.
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                        <td class="tablecarouseltd">item #4</td>
+                                        <td class="tablecarouseltd">.....</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                    start at index 0<br> while (index in bounds) { <br> &nbsp;&nbsp; check if element at
+                                    index equals target
+                                    <br> &nbsp;&nbsp;if it does, take action,
+                                    <br>&nbsp;&nbsp;&nbsp;else increase index &nbsp;&nbsp;
+                                    <br>&nbsp;&nbsp;&nbsp;}
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Binary Search</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Search Algorithm, assumes sorted array. Splits list in half
+                                    repetitively, to find target.
+                                </p>
+                                <p class="carouseldef">
+                                    Looking for 55:
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">10</td>
+                                        <td class="tablecarouseltd">11</td>
+                                        <td class="tablecarouseltd">22</td>
+                                        <td class="tablecarouseltd">33</td>
+                                        <td class="tablecarouseltd">44</td>
+                                        <td class="tablecarouseltd">55</td>
+                                        <td class="tablecarouseltd">77</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">10</td>
+                                        <td class="tablecarouseltd">11</td>
+                                        <td class="tablecarouseltd">22</td>
+                                        <td class="tablecarouseltd" style="color:red; font-style: italic;">33</td>
+                                        <td class="tablecarouseltd">44</td>
+                                        <td class="tablecarouseltd">55</td>
+                                        <td class="tablecarouseltd">77</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">10</td>
+                                        <td class="tablecarouseltd">11</td>
+                                        <td class="tablecarouseltd">22</td>
+                                        <td class="tablecarouseltd">33</td>
+                                        <td class="tablecarouseltd">44</td>
+                                        <td class="tablecarouseltd"
+                                            style="color:red; font-style: italic; font-size:larger">55</td>
+                                        <td class="tablecarouseltd">77</td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Insert Sort</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Sorting algorithm, relies on inserting subsequent items into
+                                    sorted part of list. O(n<sup>2</sup>), &#937;(n).
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">3</td>
+                                        <td class="tablecarouseltd">-1</td>
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+                                        <td class="tablecarouseltd">4</td>
+                                        <td class="tablecarouseltd">7</td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+                                        <td class="tablecarouseltd">-1</td>
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">2</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">9</td>
+
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">2</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">9</td>
+
+
+
+                                    </tr>
+                                </table>
+                                <br>
+
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Select Sort</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Sorting algorithm, swaps elements to sort list. O(n<sup>2</sup>),
+                                    &#937;(n<sup>2</sup>).
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">3</td>
+                                        <td class="tablecarouseltd">-1</td>
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd">3</td>
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">1</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+
+                                        <td class="tablecarouseltd">9</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">3</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">9</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">2</td>
+
+                                        <td class="tablecarouseltd">9</td>
+
+                                    </tr>
+                                </table>
+                                <br>
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">-1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">1</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">2</td>
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">3</td>
+
+                                        <td class="tablecarouseltd" style="color: green; font-style:italic;">9</td>
+
+
+
+                                    </tr>
+                                </table>
+                                <br>
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">O(expression)</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Big O. </p>
+                                <p class="carouseldef">
+                                    Symbol describing worst case scenario in terms of swapping/comparing values in
+                                    sort/search process.
+                                </p>
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td>Linear Search</td>
+                                        <td>O(n)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Selection Sort</td>
+                                        <td>O(n<sup>2</sup>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Insert Search</td>
+                                        <td>O(n<sup>2</sup>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Binary Search</td>
+                                        <td>O(log n)</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">&#937;(expression)</h3>
+                                <h6>Unit 7, ArrayLists</h6>
+                                <p class="carouseldef">Big &#937;. </p>
+                                <p class="carouseldef">Symbol describing best case scenario in terms of
+                                    swapping/comparing values in sort process.
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td>Linear Search</td>
+                                        <td>&#937;(1)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Selection Sort</td>
+                                        <td>&#937;(n<sup>2</sup>)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Insert Search</td>
+                                        <td>&#937;(n)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Binary Search</td>
+                                        <td>&#937;(1)</td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <a class="carousel-control-prev" href="#carouselContentunit7" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselContentunit7" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+    <!-- 2D Array Vocab -->
+    <article id="unit8-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit8" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Data Structure</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Supports storing and processing data, showing relationships.</p>
+                                <p class="carouseldef">Examples - arrays, Arraylist objects, 2 Dimensional arrays.</p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouseltd">item #4</td>
+                                        <td class="tablecarouseltd">item #5</td>
+                                        <td class="tablecarouseltd">item #6</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouseltd">item #7</td>
+                                        <td class="tablecarouseltd">item #8</td>
+                                        <td class="tablecarouseltd">item #9</td>
+                                    </tr>
+                                </table>
+                                </p>
+
+                                <p class="carouseldef">Data structures facilitate data manipulation and processing. </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">2D Array</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Matrix-like data structure that stores a collection of elements,
+                                    each identified by a row index and a column index, see below, first digit represents
+                                    the row, second digit represents the column. Elements can be primitives
+                                    or references. This data structure is fixed in size.
+                                </p>
+                                <p>
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">00</td>
+                                        <td class="tablecarouseltd">01</td>
+                                        <td class="tablecarouseltd">02</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouseltd">10</td>
+                                        <td class="tablecarouseltd">11</td>
+                                        <td class="tablecarouseltd">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouseltd">20</td>
+                                        <td class="tablecarouseltd">21</td>
+                                        <td class="tablecarouseltd">22</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                    2D arrays are declared with the type or class, a double set of square brackets, and
+                                    must be newed up with the new operator, or initialized with an initializer list.
+                                </p>
+
+                                <p class="carouseldef">
+                                    int[][] numbers = new int[3][3]; // 3 rows, 3 columns<br> int[][] numbers =
+                                    {{1,2,3}, {4,5,6}, {7,8,9}}; // initializer list, 3 rows, 3 columns<br>
+                                    SoccerPlayer[][] players = new SoccerPlayer[3][11]; // 3 rows, 11 columns
+                                    <br>
+
+                                </p>
+
+
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">2D Array Index Values, Subscripts </h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef"> 0 &lt;row index1 &lt; 2DArrayInstance.length
+
+                                </p>
+                                <p class="carouseldef">
+                                    0 &lt; column index &lt; 2DArrayInstance[0].length
+                                </p>
+                                <p>The <i>length</i> property gives the number of rows.</p>
+                                <p>The length property of a row gives the number of columns.</p>
+                                <p>int[][] numbers = {{1,2}, {3,4}, {5,6}, {7,8}};</p>
+                                <p><i>numbers.length</i> is 4, this is the number of rows.</p>
+                                <p><i>numbers[0].length</i> is 2, this is the number of columns</p>
+
+
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Out Of Bounds Error</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Condition,
+                                <p>Given 2D array, matrix,</p>
+                                <p>row index &lt; 0, or row index &gt;= matrix.length </p>
+                                <p>or</p>
+                                <p> column index &lt; 0, or column index &gt;= matrix[0].length
+
+                                </p>
+
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                    </tr>
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">item #4</td>
+                                        <td class="tablecarouseltd">item #5</td>
+                                        <td class="tablecarouseltd">item #6</td>
+                                    </tr>
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">item #7</td>
+                                        <td class="tablecarouseltd">item #8</td>
+                                        <td class="tablecarouseltd">item #9</td>
+                                    </tr>
+                                </table>
+                                <p>In the example above, the row index max value is 2, the column index max value is 2.
+                                </p>
+                                </p>
+
+
+                                <p class="carouseldef">Use the <i>length</i> property to ensure that only valid index
+                                    values are used. </p>
+
+                            </div>
+
+
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">2D Array Elements</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Entity (primitive or object) array contains, identified by 2D
+                                    array row and column index.
+
+                                </p>
+                                <p class="carouseldef">
+                                    2D array, numbers, contains [[1,222,23], [2,333,33], [3, 444, 43]]
+                                <table class="tablecarouselborders" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">1</td>
+                                        <td class="tablecarouseltd">222</td>
+                                        <td class="tablecarouseltd">23</td>
+                                    </tr>
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">2</td>
+                                        <td class="tablecarouseltd">333</td>
+                                        <td class="tablecarouseltd">33</td>
+                                    </tr>
+                                    <tr style="text-align: left;">
+                                        <td class="tablecarouseltd">3</td>
+                                        <td class="tablecarouseltd">444</td>
+                                        <td class="tablecarouseltd">43</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel" style="text-align: left;">
+                                    <tr style="text-align: left;">
+                                        <td>numbers[0][0]] is 1, the list element at row 0, column 0, is 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>numbers[1][2] is 33</td>
+                                    </tr>
+                                    <tr>
+                                        <td>numbers[2][1] is 444</td>
+                                    </tr>
+                                </table>
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Traversing 2D Arrays</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Sequencing through the elements of the 2D array, typically using
+                                    a nested loop - like regular for, enhanced for, while.
+
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarousel">
+                                    <tr>
+                                        <td cellspan="2" style="text-align: center;">
+                                            iterate through the arrays<br> &nbsp;&nbsp;iterate through each array<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp; use indices to access list element<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;change value of indices</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="text-align: left;">
+                                            <br> int[][] numbers = new int[10][10]; <br> // Next, 100 items added!<br>
+                                            <br>for (int rowIndex = 0; rowIndex &lt; numbers.length; rowIndex++) { <br>
+                                            &nbsp;for (int colIndex = 0; colIndex &lt; numbers[0].length; colIndex++) {
+                                            <br> &nbsp;&nbsp;&nbsp;System.out.print(numbers[rowIndex][colIndex]]);
+                                            <br> &nbsp;&nbsp;&nbsp;}
+                                        </td>
+                                    </tr>
+
+                                </table>
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Enhanced For Loop</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Loop, sequences through the 2D array. A nested loop is necessary.
+
+                                </p>
+                                <p class="carouseldef">
+                                    Consider a 2D array of ints, bingoNumbers,<br>
+                                    <br> int[][] bingoNumbers = new int[15][15];<br>
+                                    <br> // Traverse the rows
+                                    <br>for (int[] rowOfNumbers : bingoNumbers) {<br> &nbsp;&nbsp;// Traverse the
+                                    columns<br> &nbsp;&nbsp;for (int number : rowOfNumbers) {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;process(number);
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;}
+                                    <br> &nbsp;&nbsp;}
+                                </p>
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Row Major Order</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Loop traversal crosses the rows, processes elements in each row
+                                    in turn.
+
+                                </p>
+                                <p>
+                                    int[][] numbers = {{1,2,3}, {4,5,6}, {7,8,9}};
+                                </p>
+                                4 is the fourth value. Values are printed starting with first row, and traversing row,
+                                each time processing a value.
+                                </p>
+                                <p> <br> ----------------- <br> | 1 &rarr; | 2 &rarr; | 3 &rarr; | <span
+                                        style="color:red; font-weight: bolder;">4</span> &rarr; |<br> -----------------
+                                    <br> | 5 &rarr; | 6 &rarr; | 7 &rarr; | 8 &rarr; | <br> -----------------
+                                    <br> | 4 &rarr; | 3 &rarr; | 2 &rarr; | 1 &rarr; | <br> -----------------
+                                    <br>
+
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Column Major Order</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Loop traversal goes down columns, processes each element in turn.
+
+                                </p>
+                                <p>
+                                    int[][] numbers = {{1,2,3}, {4,5,6}, {7,8,9}};
+                                </p>
+                                2 is printed as the fourth value. Values printed starting with first column, traversing
+                                down column, each time printing a value.
+                                </p>
+                                <p> <br> ----------------- <br> | 1 &#8628; | <span
+                                        style="color:red; font-weight: bolder;">2</span> &#8628; | 3 &#8628; | 4 &#8628;
+                                    |
+                                    <br> ----------------- <br> | 5 &#8628; | 6 &#8628; | 7 &#8628; | 8 &#8628; | <br>
+                                    -----------------
+                                    <br> | 4 &#8628; | 3 &#8628; | 2 &#8628; | 1 &#8628; | <br> -----------------
+                                    <br>
+
+                                </p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Populate 2D Array</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Add elements to the 2D Array.
+                                </p>
+                                <p class="carouseldef">
+                                    SoccerPlayer[][] teams = new SoccerPlayer[3][3]; </p>
+                                <p>teams[0][0] = new SoccerPlayer("Harry Kane", 27, "Forward", "Spurs"));</p>
+
+
+                                <p class="carouseldef">
+                                    ... or by using an initializer list, with SoccerPlayer instances,
+                                </p>
+                                <p class="carouseldef">
+                                    SoccerPlayer[][] teams = {{player1, player2, player3}, <br> &nbsp; &nbsp;
+                                    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; {player4, player5, player6}, <br> &nbsp; &nbsp;
+                                    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; {player7, player8, player9}};
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Linear Search</h3>
+                                <h6>Unit 8, 2D Arrays</h6>
+                                <p class="carouseldef">Search algorithm, sequences through list, comparing each element
+                                    to target.
+                                </p>
+                                <p class="carouseldef">
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouseltd">item #1</td>
+                                        <td class="tablecarouseltd">item #2</td>
+                                        <td class="tablecarouseltd">item #3</td>
+                                        <td class="tablecarouseltd">item #4</td>
+                                    </tr>
+                                </table>
+                                </p>
+                                <p class="carouseldef">
+                                    start at index 0<br> while (index in bounds) { <br> &nbsp;&nbsp; check if element at
+                                    index equals target
+                                    <br> &nbsp;&nbsp;if it does, take action,
+                                    <br>&nbsp;&nbsp;&nbsp;else increase index &nbsp;&nbsp;
+                                    <br>&nbsp;&nbsp;&nbsp;}
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    <a class="carousel-control-prev" href="#carouselContentunit8" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselContentunit8" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+
+
+
+    <!-- INHERITANCE VOCAB -->
+    <article id="unit9-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit9" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+
+
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Class</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">Software template in OOP </p>
+                                <p class="carouseldef">Software models, objects (or instances), are made from a class,
+                                    as an achitectural blueprint is used to build houses.</p>
+                                <p class="carouseldef">Class, building block of OOP.</p>
+                                <p class="carouseldef">The 4 tenets of OOP are
+
+                                    <br>
+                                    &#x2610; Abstraction - Pulling out big ideas, forming classes<br>
+
+                                    &#x2610; Polymorphism - Objects specializing responses to same request <br>
+
+                                    &#x2610; Inheritance - Reuse of class as basis for another class <br>
+
+                                    &#x2610; Encapsulation - Subsuming logic, data inside class or object<br>
+
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Object or Instance</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">Software model made from class. Object is instatiated, or 'newed
+                                    up' based on class.
+                                </p>
+                                <p class="carouseldef">
+                                    SoccerPlayer player = new SoccerPlayer();
+                                </p>
+                                <p class="carouseldef"><i>SoccerPlayer</i> is the class, and <i>player</i> represents
+                                    the object.</p>
+                                <p class="carouseldef">Instance may have instance variables, instance methods. Instance
+                                    variables may be protected by accessibility modifier and may only be viewed or
+                                    changed by methods called getters and setters.</p>
+                                <p class="carouseldef">
+                                    public class SoccerPlayer {<br> private String name;<br> ...
+                                    <br> public String getName() {<br> return this.name;<br> }
+                                    <br>
+                                </p>
+
+                                <p class="carouseldef">An object is a reference to an area of memory.</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Inheritance</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">Reuse by one class, subclass, of methods and properties of
+                                    another class, superclass.
+
+                                </p>
+
+                                <p class="carouseldef"><i>Inheritance</i> is designated with keyword <i>extends</i> in
+                                    Java. </p>
+                                <p>Class, <i>ChocolateChipCookie</i> inherits from class
+                                    <i>PlainCookie</i>. The subclass parameterized constructor calls <i>super</i>
+                                    constructor.
+                                </p>
+                                <p class="carouseldef">
+                                    public class PlainCookie {<br>
+                                    &nbsp;&nbsp; private double qtyFlour;<br>
+                                    &nbsp;&nbsp; // Other attributes, constructor, methods<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; }
+                                    <br>
+                                </p>
+                                <p class="carouseldef">public class ChocChipCookie
+                                    <span class="oomph">extends</span>
+                                    PlainCookie {<br> &nbsp;&nbsp; private double qtyChocChips;<br>
+                                    <br> &nbsp;&nbsp;public ChocChipCookie(double qtyChocChips,
+                                    double qtyFlour,...)
+                                    {<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;super(qtyFlour, ...);
+                                    ... }
+                                    <br>
+                                </p>
+                            </div>
+
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Class Hierarchy</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">Set of classes related via <i>Inheritance</i>.
+
+                                </p>
+
+                                <div class="parent">PlainCookie&#127850;</div>
+                                <div class="bigarrow">&#x21a7;</div>
+
+                                <div class="child">ChocChipCookie &#127850;</div>
+
+                                <div class="bigarrow">&#x21a7;</div>
+
+                                <div class="grandchild">NutChocChipCookie&#127850;</div>
+
+                                <br>
+                                <p><i>PlainCookie</i> is parent class of <i>ChocChipCookie</i>, which in turn is parent
+                                    class of
+                                    <i>NutChocChipCookie</i>.
+                                </p>
+                                <p class="carouseldef">IS-A relationship between subclasses and superclass.
+                                    NutChocChipCookie IS-A ChocChipCookie, which IS-A PlainCookie.
+                                </p>
+
+                            </div>
+
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Superclass, Subclass</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">Superclass or parent class reused by subclass or child class, via
+                                    <i>Inheritance</i>.
+
+                                </p>
+                                <div class="parent">PlainCookie&#127850;</div>
+                                <div class="bigarrow">&#x21a7;</div>
+
+                                <div class="child">ChocChipCookie &#127850;</div>
+
+                                <div class="bigarrow">&#x21a7;</div>
+
+                                <div class="grandchild">NutChocChipCookie&#127850;</div>
+                                <br>
+                                <p><i>PlainCookie</i> is the parent class of <i>ChocChipCookie</i>, the parent class of
+                                    <i>NutChocChipCookie</i>.
+                                </p>
+                                <p class="carouseldef">IS-A relationship exists between subclasses and superclass.
+                                    NutChocChipCookie IS-A ChocChipCookie, which IS-A PlainCookie.
+                                </p>
+
+                            </div>
+
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Override</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">
+                                    Subclass can redefine method from parent class. When method called from instance of
+                                    subclass, method defined in subclass is called, thus <span
+                                        class="oomph">overriding</span> method in superclass.
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class PlainCookie {<br> ....
+                                    <br> public void displayBakeTemp() {<br> &nbsp;&nbsp;System.out.println("385
+                                    Fahrenheit"); <br>}<br>
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class ChocChipCookie {<br> ....
+                                    <br> public void displayBakeTemp() {<br> &nbsp;&nbsp;System.out.println("350
+                                    Fahrenheit"); <br>}<br>
+
+                                </p>
+                                <p class="carouseldef">PlainCookie cookie = new Cookie();<br>
+                                    PlainCookie chocCookie = new ChocChipCookie();</p>
+
+                                <p>chocCookie.displayBakeTemp(); //<i>350 Fahrenheit </i>displayed!</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Polymorphism</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">
+                                    When objects (related via inheritance) respond in different ways to same request.
+                                    Overriding methods is how Java does Polymorphism!
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class PlainCookie {
+                                    <br> public void displayBakeTemp() {<br> &nbsp;&nbsp;System.out.println("385
+                                    Fahrenheit"); <br>}<br>
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class ChocChipCookie extends PlainCookie{
+                                    <br> public void displayBakeTemp() {<br> &nbsp;&nbsp;System.out.println("350
+                                    Fahrenheit"); <br>}<br>
+
+                                </p>
+                                <p class="carouseldef">PlainCookie cookie = new Cookie();<br>PlainCookie chocCookie =
+                                    new ChocChipCookie();</p>
+                                <br>
+                                <p>chocCookie.displayBakeTemp(); // <i>350 Fahrenheit </i>is displayed!<br>
+                                    cookie.displayBakeTemp(); // <i>385 Fahrenheit </i>is displayed!</p>
+                            </div>
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Upcasting</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">
+                                    Casting to superclass, further UP in class hierarchy. Also known as generalization
+                                    or widening.
+
+                                </p>
+
+                                <p class="carouseldef">
+                                    public class PlainCookie {....}
+
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class ChocChipCookie extends PlainCookie{ ....}
+
+
+                                </p>
+                                <p class="carouseldef">
+                                    PlainCookie chocCookie = new ChocChipCookie();</p>
+                                <br>
+                                <p class="carouseldef">
+                                    <i>Implicit</i> upcast done here, to superclass.
+                                </p>
+                                <p>int quantityChips = ((ChocChipCookie)chocCookie).getQtyChocChips();</p>
+                                <p class="carouseldef">Upcasting can result in hiding specialized class'
+                                    attributes/methods - can be resolved by casting to specialized class.</p>
+                                <p>PlainCookie chocCookie = new ChocChipCookie();</p>
+
+
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Downcasting</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">
+                                    Specialization or narrowing, casts instance of superclass to instance of subclass.
+
+                                </p>
+
+                                <p class="carouseldef">In Java, downcasting can cause <i>Class Cast Exception</i> -
+                                    exception thrown when real object does not match class object being cast to.</p>
+                                <p class="carouseldef">
+                                    public class PlainCookie {....}
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class ChocChipCookie extends PlainCookie{.... }
+
+                                </p>
+                                <p>This causes incompatible types (classes) error,</p>
+                                <p class="carouseldef">
+                                    ChocChipCookie cookie = new Cookie();<br>
+                                </p>
+                                <p class="carouseldef">Explicit cast removes incompatible types issue, but causes Class
+                                    Cast Exception at runtime.</p>
+                                <p> ChocChipCookie cookie = (ChocChipCookie)new Cookie();<br></p>
+                                <br>
+                                <p>Downcasting is not allowed in Java, upcasting is!</p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Class Cast Exception</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">
+                                    Exception thrown at runtime when instance of superclass downcast to subclass.
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class PlainCookie {....}
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class ChocChipCookie extends PlainCookie{.... }
+
+                                </p>
+                                <p>This causes an incompatible types (classes) error,</p>
+                                <p class="carouseldef">
+                                    ChocChipCookie cookie = new Cookie();<br>
+                                </p>
+                                <p class="carouseldef">Explicit cast removes incompatible types issue, but causes Class
+                                    Cast Exception runtime.</p>
+                                <p> ChocChipCookie cookie = (ChocChipCookie)new Cookie();<br></p>
+                                <br>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Implicit Call To Super</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">
+                                    When classes are related in a hierarchy, superclass constructor called, even without
+                                    specific code.
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class PlainCookie {....<br> &nbsp;&nbsp;public PlainCookie() {}<br> }
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class ChocChipCookie extends PlainCookie{....<br> &nbsp;&nbsp;public
+                                    ChocChipCookie() {}<br> }
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class NutChocChipCookie extends ChocChipCookie{.... &nbsp;&nbsp;public
+                                    NutChocChipCookie() {}<br> }
+
+                                </p>
+                                <p>NutChocChipCookie cookie = new NutChocChipCookie();<br>
+
+                                <p class="carouseldef">PlainCookie constructor called,
+                                    followed by ChocChipCookie constructor, and then NutChocChipCookie constructor. </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Explicit Call To Super</h3>
+                                <h6>Unit 9, Inheritance</h6>
+                                <p class="carouseldef">
+                                    When classes are related in hierarchy, may be necessary to call superclass, so
+                                    values assigned to attributes. This is explicitely calling constructor of
+                                    superclass.
+
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class PlainCookie {....<br>
+                                    &nbsp;&nbsp;public PlainCookie(int flour, ....) {... }
+                                    <br> }
+
+                                </p>
+                                <p class="carouseldef">
+                                    public class ChocChipCookie extends PlainCookie{....<br>
+                                    &nbsp;&nbsp;public ChocChipCookie(int chocChips, int flour, ...) {<br>
+                                    &nbsp;&nbsp; super(qtyFlour, ...);...&nbsp;&nbsp;&nbsp;&nbsp;<br>}
+                                    <br> &nbsp;}
+
+                                </p>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <a class="carousel-control-prev" href="#carouselContentunit9" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselContentunit9" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+
+
+    <!--   Modals for UNIT 10 RECURSION -->
+    <article id="unit10-modal" class="modal fade">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content modal-lg">
+
+                <div class="container carouselback">
+                    <div id="carouselContentunit10" class="carousel carouselback slide" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+
+                            <div class="carousel-item active text-center p-4">
+                                <h3 class="carouselh3">Recursion</h3>
+                                <h6>Unit 10, Recursion</h6>
+                                <p class="carouseldef">A software engineering technique in which a block of code
+                                    (method, function) calls itself. </p>
+                                <p class="carouseldef">Below, method <i>summer</i> is a recursive method. It adds the
+                                    values in an array.</p>
+                                <p class="codePara"> public static int summer(int[] nums, int index) {<br>
+                                    &nbsp;&nbsp;if (index == 0)<br> &nbsp;&nbsp;&nbsp;&nbsp; return nums[0];<br>
+                                    &nbsp;&nbsp;
+                                    <br> &nbsp;&nbsp;&nbsp;&nbsp;return (nums[index] + summer(nums, index -1)); }
+                                </p>
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Base Case</h3>
+                                <h6>Unit 10, Recursion</h6>
+                                <p class="carouseldef">The condition handled before a recursive call returns to the
+                                    caller.
+                                </p>
+                                <p class="codePara"> // model a(n) = a +(n-1)d<br> public static int
+                                    arithmeticSequence(int n, int d, int a) {<br>
+                                    <span style="color:red">&nbsp;&nbsp;// Base case<br> &nbsp;&nbsp;if (n == 1) {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; return a;</span><br> &nbsp;&nbsp;}
+                                    <br> &nbsp;&nbsp;// Recursive Case<br> &nbsp;&nbsp;&nbsp;&nbsp;return
+                                    (arithmeticSequence(n - 1, d, a) + d);<br> }
+                                </p>
+
+                            </div>
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Recursive Case</h3>
+                                <h6>Unit 10, Recursion</h6>
+                                <p class="carouseldef">The condition that causes the recursive routine to call itself.
+                                <p class="codePara"> // model a(n) = a +(n-1)d<br> public static int
+                                    arithmeticSequence(int n, int d, int a) {<br> &nbsp;&nbsp;// Base case<br>
+                                    &nbsp;&nbsp;if (n == 1) {<br> &nbsp;&nbsp;&nbsp;&nbsp; return a;<br> &nbsp;&nbsp;}
+                                    <br> &nbsp;&nbsp;<span style="color:red">// Recursive Case<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;return (arithmeticSequence(n - 1, d, a) + d);</span><br>
+                                    }
+                                </p>
+
+                            </div>
+
+
+
+                            <div class="carousel-item text-center p-4">
+                                <h3 class="carouselh3">Stack Overflow Error</h3>
+                                <h6>Unit 10, Recursion</h6>
+                                <p class="carouseldef">Exception thrown when there are too many recursive calls, all of
+                                    which leave data on the stack.
+
+                                </p>
+                                <p class="carouseldef">
+                                    A stack overflow exception is typically thrown when a base case has been omitted
+                                    from a recursive solution, and the stack reaches it'slimit.
+                                </p>
+                                <p>
+                                <table class="tablecarouselborders">
+                                    <tr>
+                                        <td class="tablecarouselborders">99</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouselborders">...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouselborders">...</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouselborders">44</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tablecarouselborders">33</td>
+                                    </tr>
+
+                                </table>
+                                </p>
+                            </div>
+
+
+
+
+                        </div>
+
+
+
+
+
+                        <a class="carousel-control-prev" href="#carouselContentunit10" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselContentunit10" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!----------------------------------------------------------------------------->
+
+    <!----------------------------------------------------------------------------->
+
+
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
