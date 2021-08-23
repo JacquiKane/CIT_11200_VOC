@@ -233,18 +233,17 @@
                 <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
 
                     <a data-toggle="modal" data-target="#vocabverifier" data-highres="vocab1.png" href="#">
-                        <img class="layout-image imgUnit" src="images\1vocab.png" alt="Vocab Verifier"
-                            style="width:100%">
+                        <img class="layout-image imgUnit" src="images\1vocab.png" alt="Vocab Verifier">
 
                     </a>
-                    <h5 class="layout-title pt-2">Vocab</h5>
+                    <h5 class="layout-title pt-2">Net<em>words</em></h5>
                 </section>
 
                 <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
-                    <a data-toggle="modal" data-target="#unit2-modal" data-highres="unit2.png" href="#">
-                        <img class="layout-image imgUnit" src="unit2.png" alt="Unit 2, Using Objects">
+                    <a data-toggle="modal" data-target="#buildingblocks" data-highres="images/building.png" href="#">
+                        <img class="layout-image imgUnit" src="images/building.png" alt="Building Blocks">
                     </a>
-                    <h5 class="layout-title pt-2">Vocab in context</h5>
+                    <h5 class="layout-title pt-2">Building Blocks</h5>
                 </section>
 
             </div>
@@ -744,6 +743,285 @@
     </div>
 
 
+    <!-- BUILDING BLOCKS -->
+    <div class="modal" id="buildingblocks" tabindex=-1 aria-labelledby="buildingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buildingModalLabel1">Building Blocks</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <td>
+                                <span class="quote">There are 10 types
+                                    of people in the world, those who know binary and those who don't!</span>
+                            </td>
+                            <td>
+                                <i class="material-icons custom">question_answer</i>
+                                <p>
+                                    Binary is a number system, that's it! The number base that binary uses is base 2.
+                                    The only digits that binary has are 1 and 0.
+                                </p>
+                                <p>Binary is important for digital representation. A binary 1 represents a pulse and a
+                                    binary 0 represents no pulse (of electricity of course). Computers record data with
+                                    pulses of electricity, and these map perfectly to a
+                                    1 or a 0.</p>
+                                <p>Data is represented as pulses of electricity, mapped to 1s and 0s. Quantities are
+                                    massive(!), so we apply units of larger measurement.</p>
+                                <br>
+                            </td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Binary, Hex, Octal</td>
+                            </tr>
+                            <td><br>
+                                <i class="material-icons custom">stars</i> What is binary?<br>
+                                <i class="material-icons custom">stars</i> Why is binary important on computers?<br>
+                                <i class="material-icons custom">stars</i> How can I convert a decimal number to
+                                binary?
+                                <br>
+                                <i class="material-icons custom">stars</i> What's hexadecimal?<br>
+                                <i class="material-icons custom">stars</i> Can hexadecimal be converted to decimal?
+                                binary?
+                                <br>
+                                <i class="material-icons custom">stars</i> Why use hexadeciaml or decimal?<br>
+                                <i class="material-icons custom">stars</i> How many bits does a number need?<br>
+                                <i class="material-icons custom">stars</i> What is overflow?<br>
+                            </td>
+                            <td>
+
+
+                                <p>To convert a binary number to the equivalent decimal number, you use the base,
+                                    which is 2, and multiply each digit by the base raised to the power of the
+                                    digit's place position. Click to see an example
+                                    <button type="button" class="btn btn-info" id="binnumbutton"
+                                        data-bs-toggle="popover" title="Binary to decimal" data-trigger="hover focus"
+                                        html="true">here</button>.
+                                </p>
+
+                                <div id="binnum" style="display: none">
+                                    <div>
+                                        <p>A binary number is represented as a string of 1s and 0s, like this</p>
+                                        <p>1010</p>
+                                        <p>A subscript of 2 indicates that this number is a binary number, and not
+                                            one thousand and 10.</p>
+                                        <p>1001<sub>2</sub></p>
+                                        <p>This number can be shown in expanded form as,</p>
+                                        <p>(1 x 2
+                                            <sup>3</sup>) + (0 x 2
+                                            <sup>2</sup>) + (0 x 2
+                                            <sup>1</sup>) + (1 x 2<sup>0</sup>)
+                                        </p>
+                                        <p>(8) + (0) + (0) + (1) = 9</p>
+                                    </div>
+                                </div>
+
+
+
+
+                                <p>Octal is a term that represents base 8, and hexadecimal represents base 16. '0x'
+                                    is a prefix for a hexadecimal number, like 0x1B7A. It takes 4 bits to represent
+                                    a hexadecimal number in binary.</p>
+                                <p>Want to review the hexadecimal chart? Click
+                                    <button type="button" class="btn btn-info" id="hexchartbutton"
+                                        data-bs-toggle="popover" data-placement="right" title="Hexadecimal chart"
+                                        data-trigger="hover focus" html="true">here</button>
+                                </p>
+                                </p>
+                                <p>0x2D5C? 2 is 0010, D is 1101, 5 is 0101, C is 1100, so 0x2D5C is
+                                    0010110101011100.
+                                </p>
+                                <p>You can convert 0x2D5C to decimal by using the binary translation and mulyiplying
+                                    by powers of 2, or you can multiply the digits by powers of 16.</p>
+                                <p>0x2D5C : (2 x 16
+                                    <sup>3</sup>) + (D x 16
+                                    <sup>2</sup>) + (5 x 16
+                                    <sup>1</sup>) + (C x 16
+                                    <sup>0</sup>)
+                                </p>
+
+                                <p>The computer only understands pulses of electricity, represented to us as the 1s
+                                    and 0s in a binary stream. The equivalent decimal, octal and hexadecimal
+                                    representations take up a lot less space and are easier to compare
+                                    on a chart. This is why you need to know how to convert between the bases.</p>
+
+                                <p>A bit is the smallest unit of storage on a computer, and can represent a 1 or a
+                                    0. Any one hexadecimal digit requires 4 bits. Suppose we only allow for 4 bits
+                                    of storage and want to represent the number 20? In binary, 20
+                                    is 10100<sub>2</sub>. This needs 5 bits, so if we only had 4 bits there would be
+                                    overflow and we would only see 0100.</p>
+                                <!--  content of popover  -->
+                                <div id="hexchart" style="display: none">
+                                    <div>
+                                        <p>The hexadecimal number system has 16 digits, shown below with the binary
+                                            representation.
+                                        </p>
+                                        <table>
+                                            <tr>
+                                                <th>binary</th>
+                                                <th>hexadecimal</th>
+                                                <th>decimal</th>
+                                            </tr>
+                                            <tr>
+                                                <td>0000</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0001</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0010</td>
+                                                <td>2</td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0011</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0100</td>
+                                                <td>4</td>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0101</td>
+                                                <td>5</td>
+                                                <td>5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0110</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0111</td>
+                                                <td>7</td>
+                                                <td>7</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1000</td>
+                                                <td>8</td>
+                                                <td>8</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1001</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1010</td>
+                                                <td>A</td>
+                                                <td>10</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1011</td>
+                                                <td>B</td>
+                                                <td>11</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1100</td>
+                                                <td>C</td>
+                                                <td>12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1101</td>
+                                                <td>D</td>
+                                                <td>13</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1110</td>
+                                                <td>E</td>
+                                                <td>14</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1111</td>
+                                                <td>F</td>
+                                                <td>15</td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <!-- end content of popover -->
+
+
+                            </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Measuring Bits and bytes</td>
+                            </tr>
+                            <tr>
+                                <td> <i class="material-icons custom">stars</i> How do we measure bits and bytes?<br>
+                                </td>
+                                <td>
+
+
+                                    <table>
+                                        <tr>
+                                            <td>Bit</td>
+                                            <td>Single binary digit, 1 or 0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nybble</td>
+                                            <td>4 Bits</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Byte</td>
+                                            <td>8 bits</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kilobyte(KB)</td>
+                                            <td>1024 bytes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Megabyte(KB)</td>
+                                            <td>1024 Kilobytes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gigabyte(GB)</td>
+                                            <td>1024 Megabytes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Terabyte(TB)</td>
+                                            <td>1024 Gigabytes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Petabyte(PB)</td>
+                                            <td>1024 Terabytes</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Exabyte(EB)</td>
+                                            <td>1024 Petabytes</td>
+                                        </tr>
+                                    </table>
+
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <script src="js/lib/jquery.min.js"></script>
     <script src="js/lib/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
@@ -1201,6 +1479,35 @@
             $('#myInput').trigger('focus')
         })
     </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#hexchartbutton').popover({
+                html: true,
+                content: function () {
+                    return $('#hexchart').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#binnumbutton').popover({
+                html: true,
+                content: function () {
+                    return $('#binnum').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
 
     <script>
         $(document).ready(function () {
