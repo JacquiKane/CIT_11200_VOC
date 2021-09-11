@@ -1,0 +1,2199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script defer src="js/lib/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Programming</title>
+    <style>
+        .imgUnit {
+            width: 80%;
+            height: auto;
+            border-radius: 15px;
+            border: 5px solid navy;
+            box-shadow: 5px 10px #888888;
+        }
+
+        .carousel-item.active,
+        .carousel-item-next,
+        .carousel-item-prev {
+            display: block;
+        }
+
+        .carouselback {
+            height: 600px;
+            background-image: url("notepaper.png");
+        }
+
+        .carouseldef {
+            width: 90%;
+            padding-left: 10%;
+            text-align: left;
+            justify-content: left;
+            color: darkblue;
+        }
+
+        .carouselh3 {
+            color: darkblue;
+        }
+
+        .tablecarousel {
+            padding-left: 50%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+        }
+
+        .tablecarouseldetail {
+            width: 70%;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+        }
+
+        .tablecarouseldetail td {
+            padding: 5px;
+        }
+
+        .tablecarouselborders {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            border: 3px solid seashell;
+            border-left: 3px solid seashell;
+            border-collapse: collapse;
+        }
+
+        .tablecarouseltd {
+            padding: 5px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            color: navy;
+            border: 3px solid seashell;
+        }
+
+        .tablecarouseltd_detail {
+            padding: 5px;
+            text-align: left;
+            color: navy;
+            border: 3px solid blue;
+        }
+
+        .oomph {
+            font-size: large;
+            font-weight: bold;
+            color: navy;
+        }
+
+        .parent {
+            width: 150px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: lightgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .child {
+            width: 200px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: limegreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .grandchild {
+            width: 300px;
+            height: 30px;
+            margin-left: 50px;
+            background-color: darkgreen;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 15px;
+            font-size: larger;
+        }
+
+        .bigarrow {
+            margin-left: 100px;
+            font-size: 2em;
+            text-align: left;
+        }
+
+        .codePara {
+            text-align: left;
+            font-weight: bold;
+            padding-left: 10%;
+        }
+
+        .tablequestion {
+            display: table;
+            border: 5px solid blue;
+            padding: 10px;
+            border-collapse: separate;
+            justify-content: left;
+            text-align: left;
+        }
+
+        table.question-table tbody td {
+            border: solid thin;
+            padding-left: 3px;
+        }
+
+        table.question-table tbody th {
+            border: solid thin;
+            padding-left: 3px;
+        }
+
+        .infocell {
+            background-color: powderblue;
+        }
+
+        .material-icons i {
+            margin-right: -10px;
+            padding-right: -20px;
+        }
+
+        i.custom {
+            font-size: 2em;
+            color: green;
+        }
+
+        .oomph {
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .popupimg {
+            width: 90%;
+            height: auto;
+        }
+
+        .buttonOomph {
+            height: auto;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
+
+    <header id="page-hero" class="site-header">
+
+        <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+            <div class="container-fluid">
+
+
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav"
+                    aria-controls="#myTogglerNav" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+            </div>
+
+        </nav>
+
+        <section class="layout-hero d-flex align-items-center text-light text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-11 col-sm-10 col-md-8 animated fadeInUp">
+                        <h3 class="page-section-title">Software Development</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+    <article id="page-multicolumn" class="page-section text-center py-5">
+
+
+
+        <section class="layout-multicolumn container">
+
+            <div class="row justify-content-center family-sans text-uppercase">
+
+                <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+
+                    <a data-toggle="modal" data-target="#vocabverifier" data-highres="vocab1.png" href="#">
+                        <img class="layout-image imgUnit" src="images\1vocab.png" alt="Vocab Verifier">
+
+                    </a>
+                    <h5 class="layout-title pt-2"><em>Code</em> Words</h5>
+                </section>
+
+                <section class="mb-5 col-10 col-md-6 col-lg-4 col-xl-3">
+                    <a data-toggle="modal" data-target="#buildingblocks" data-highres="images/building.png" href="#">
+                        <img class="layout-image imgUnit" src="images/building.png" alt="Building Blocks">
+                    </a>
+                    <h5 class="layout-title pt-2">Building Blocks</h5>
+                </section>
+
+            </div>
+
+        </section>
+
+
+    </article>
+
+
+
+
+
+
+
+
+    <footer class="site-footer bg-secondary text-light d-flex justify-content-center">
+
+
+
+    </footer>
+
+
+
+    <!--   Modals for each unit -->
+    <!-- VOCABULARY VERIFIER -->
+    <div class="modal" id="vocabverifier" tabindex=-1 aria-labelledby="vocabverifierLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="vocabModalLabel1">Code Words</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Applications, Programs
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">
+                                        stars</i>Program Statement<br>
+                                    <i class="material-icons custom">stars</i>
+                                    Keyword<br>
+                                    <i class="material-icons custom">stars</i>
+                                    Syntax, Semantics, Logic<br>
+
+                                    <i class="material-icons custom">stars</i>
+                                    Syntax Error, Semantic Error
+                                    <br>
+                                    <i class="material-icons custom">stars</i>
+                                    Variable, Constant
+                                    <br>
+                                    <i class="material-icons custom">stars</i>
+                                    Debugging
+                                    <br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">
+                                        question_answer</i>
+                                    <p>Programs or applications are made up of
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="programstatementpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Program Statement" html="true">program
+                                            statements</button>, composed of
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="keywordpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Keyword" html="true">
+                                            keywords</button> that have special meaning in a given programming language.
+
+                                    </p>
+                                    <p>
+                                        The <button type="button" class="btn btn-info" id="syntaxpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="Syntax"
+                                            html="true">syntax</button> of the language specifies how it should be used,
+                                        while the
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="semanticspopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Semantics" html="true">
+                                            semantics</button> deals with the logic behind program statements.
+
+                                    </p>
+                                    <p>Data is temporarily stored in computer memory during program execution, and
+                                        specific data is stored in
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="variablepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Variable" html="true">variables</button>.
+                                        Data that should not change is stored in <button type="button"
+                                            class="btn btn-info" data-placement="top" id="constantpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="Constant"
+                                            html="true">constants
+                                        </button>.
+                                    </p>
+                                    <p>
+                                        Errors are filtered in a process of <button type="button" class="btn btn-info"
+                                            data-placement="top" id="debuggingpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Debugging" html="true">debugging
+                                        </button>.
+                                    </p>
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2" class="infocell">Discussing languages
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>Programming Language, Scripting
+                                    Language<br>
+
+                                    <i class="material-icons custom">stars</i>Compiler, Interpreter, Transpiler<br>
+                                    <i class="material-icons custom">stars</i>Source Code, Executable Code, Object
+                                    Code<br>
+                                    <i class="material-icons custom">stars</i>Low Level Language, High Level
+                                    Language<br>
+                                    <i class="material-icons custom">stars</i>
+                                    First Generation Language, Second Generation Language, Third Generation Language,
+                                    Fourth Generation Language, Fifth Generation Language<br>
+                                    <i class="material-icons custom">stars</i>Assembly Language, Assembler<br>
+
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+
+                                    <p>A
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="programminglanguagepopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Programming Language" html="true">
+                                            programming language</button>
+                                        is any language software developers use to create programs, or applications.
+                                        The code is termed
+
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="sourcecodepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Source Code" html="true">
+                                            source code</button>, and must be converted to a form the computer can
+                                        understand. This is done with tools called
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="compilerpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Compiler" html="true">compilers</button> and
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="interpreterpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Interpreter" html="true">interpreters</button>, into
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="objectcodepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Object Code" html="true">object
+                                            code</button>, and eventually
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="executablecodepopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Executable Code" html="true">executable
+                                            code</button>.
+                                    </p>
+                                    <p>
+                                        Before any coding, developers often plan the code by writing
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="structuredenglishpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Structured English"
+                                            html="true">Structured English</button> plan of what the code will do.
+                                        A form called <button type="button" data-placement="top" class="btn btn-info"
+                                            id="pseudocodepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Pseudocode" html="true">pseudocode</button> is closer to the
+                                        language, but also a way of representing the coding.
+                                        Another tool to plan the program design is
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="flowchartingpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Flow Charting"
+                                            html="true">Flowcharting</button>,
+                                        which uses a defined set of symbols.
+                                    </p>
+
+
+                                    </p>
+                                    <p>
+                                        Languages have evolved over the years and have
+                                        categories that describe a level
+                                        of
+                                        closeness to a natural language, like English.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="firstgenerationlanguagepopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="First Generation Language"
+                                            html="true">First gen languages (1GL)</button>
+                                        and <li><button type="button" data-placement="top" class="btn btn-info"
+                                                id="secondgenerationlanguagepopup" data-bs-toggle="popover"
+                                                data-bs-trigger="hover focus" title="Second Generation Language"
+                                                html="true">Second generation
+                                                languages (2GL)</button>
+                                            are closer to the machine,
+                                            and as programming languages
+                                            have evolved,
+
+                                            </button></li>
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="thirdgenerationlanguagepopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Third Generation Language"
+                                            html="true">third generation languages(3GL)</button> became more user
+                                        friendly, like FORTRAN, and COBOL, C# and Java.
+
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="fourthgenerationlanguagepopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Fourth Generation Language"
+                                            html="true">Fourth generation languages (4GL)</button> are specialized
+                                        towards
+                                        particular domains, like database management. Examples include SQL and R.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="fifthgenerationlanguagepopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Fifth Generation Language"
+                                            html="true">Fifth generation languages (5GL)</button> are used in artificial
+                                        intelligence research and development.
+                                        </button>
+                                        </ul>
+                                    </p>
+
+                                </td>
+                            </tr>
+
+                            <!-- Antivirus software -->
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Antivirus software
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>
+                                    Virus signature<br>
+                                    <i class="material-icons custom">stars</i>
+                                    Heuristic Analysis<br>
+                                    <i class="material-icons custom">stars</i>
+                                    Virus hoax<br>
+
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">
+                                        question_answer</i>
+                                    <p>
+                                        Anti-virus software looks for a
+                                        <button type="button" class="btn btn-info" id="virussignaturepopup"
+                                            data-placement="top" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Virus Signature" html="true">
+                                            Virus Signature</button> on files that are on the computer or other device.
+                                        If found, the software is put into
+
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="quarantinepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Quarantine" html="true">
+                                            quarantine</button> to allow reinstatement if harmless, or prevent
+                                        activating the malware.
+
+                                        Careful about downloading antivirus software, a
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="virushoaxpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Virus Hoax" html="true">
+
+                                            virus hoax</button> .
+                                    </p>
+
+
+                                </td>
+                            </tr>
+                            <!-- -->
+
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Intrusion, Intercepting
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>
+                                    Online Intrusion, backdoor
+                                    <br>
+                                    <i class="material-icons custom">stars</i>tagging,
+                                    RAT, Ransomware, Botnet, Zero-Day Attacks
+                                    <br>
+
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+                                    <p>
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="onlineintrusionpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Online Intrusion" html="true">Online
+                                            Intrusion</button> has taken the dangers of malware to a new level.
+                                        This form of malware usually begins with a Worm or Trojan setting up a
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="backdoorpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Backdoor" html="true">backdoor</button>.
+                                    </p>
+                                    <p>These types of <em>intrusion</em> are common,
+                                        <button type="button" data-placement="top" class="btn btn-info" id="ratpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Remote Access Trojan" html="true">RAT</button>
+                                        ,
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="ransomwarepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Ransomware" html="true">Ransomware</button>,
+                                        <button type="button" data-placement="top" class="btn btn-info" id="botnetpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="Botnet"
+                                            html="true">Botnet</button>,
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="zerodaypopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Zero Day Attack" html="true">
+                                            Zero-day attack</button>
+
+                                    </p>
+                                    <p>Keep intrusions out by using a <button type="button" data-placement="top"
+                                            class="btn btn-info" id="firewallpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Firewall"
+                                            html="true">firewall</button>,
+                                        and by being careful about <button type="button" data-placement="top"
+                                            class="btn btn-info" id="openportspopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Computer Ports" html="true">open
+                                            ports</button>.</p>
+                                </td>
+                            </tr>
+
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Dangers of Interception
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>
+                                    Intercepts<br>
+                                    <i class="material-icons custom">stars</i>
+                                    Spyware, Adware, Keyloggers, MITM/MIM, Evil-Twin, Address Spoofing, IMSI Catcher<br>
+                                    <br>
+                                    <i class="material-icons custom">stars</i>
+                                    Digital Certificate Hacks<br>
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">
+                                        question_answer</i>
+                                    <p>
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="interceptpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Interception Exploits" html="true">
+                                            Interception exploits</button> access computers and
+                                        cell phones, any software in an automated vehicle.
+                                    </p>
+                                    <p> These exploits can take the form of
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="spywarepopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Spyware" html="true">spyware</button>,
+                                        <button type="button" data-placement="top" class="btn btn-info" id="adwarepopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="Adware"
+                                            html="true">adware</button>,
+
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="keyloggerpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Keyloggers" html="true">keyloggers</button>,
+                                        <button type="button" data-placement="top" class="btn btn-info" id="mitmpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Man-In-The-Middle" html="true">MITM/MIT</button>,
+
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="eviltwinpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Evil Twin" html="true">Evil Twin</button>,
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="addressspoofingpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Address Spoofing" html="true">Address
+                                            Spoofing</button>,
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="digitalcertificatehackpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Digital Certificate Hack"
+                                            html="true">Digital Certificate Hack
+                                        </button>,
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="imsicatcherpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="IMSI Catcher" html="true">IMSI Catcher</button>.
+
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr class="trquestion">
+                                <td colspan="2" class="infocell">Social Engineering
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="material-icons custom">stars</i>
+                                    Social engineering
+                                    <br>
+                                    <i class="material-icons custom">stars</i>
+                                    SPAM, E-mail scams, Phishing, Pharming, Rogue Anti-virus Exploit, PUP, PUA<br>
+
+                                </td>
+                                <td>
+                                    <i class="material-icons custom">question_answer</i>
+
+
+
+                                    <p><button type="button" data-placement="top" class="btn btn-info"
+                                            id="socialengineeringpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Social Engineering" html="true">
+                                            Social Engineering</button> techniques are used to get victims to divulge
+                                        passwords or release data.
+                                        <button type="button" data-placement="top" class="btn btn-info" id="spampopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="SPAM"
+                                            html="true">SPAM</button> emails take up time and flood the internet.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="emailscampopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="E-Mail Scams" html="true">E-mail scams</button> and <button
+                                            type="button" data-placement="top" class="btn btn-info"
+                                            id="advancefeefraudpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="advance fee fraud" html="true">advance
+                                            fee fraud</button>
+                                        have cost unsuspecting receivers vast amounts of time and money.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="phishingpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Phishing" html="true">phishing</button> and <button type="button"
+                                            data-placement="top" class="btn btn-info" id="spearphishingpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Spear Phishing" html="true">Spear Phishing</button> lead to
+                                        inadvertent disclosure of important information.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="pharmingpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Pharming" html="true">Pharming</button> with associated fake web
+                                        sites makes the internet ever more untrustworthy.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="rogueantiviruspopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Rogue Anti-Virus Exploits"
+                                            html="true">Rogue Anti-Virus Exploits</button> make it unsafe to take advice
+                                        to protect your device.
+                                        <button type="button" data-placement="top" class="btn btn-info" id="puppopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus" title="PUP"
+                                            html="true">PUP</button> and <button type="button" data-placement="top"
+                                            class="btn btn-info" id="puapopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="PUA" html="true">PUA
+                                        </button> result in applications on disk a user did not mean to download.
+
+                                    </p>
+                                    <p>Users should beware of enticements and stick to intent in accessing the web.
+                                        Observe safe browsing and question any unexpected communications.</p>
+
+
+                                </td>
+                            </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- BUILDING BLOCKS -->
+    <div class="modal" id="buildingblocks" tabindex=-1 aria-labelledby="buildingLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="buildingModalLabel1">Building Blocks</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="tablequestion question-table">
+                        <tbody>
+                            <td>
+                                <span class="quote">Any fool can write code that a computer can understand. Good
+                                    programmers write code that humans can understand.</span><br>Martin Fowler</span>
+                            </td>
+                            <td>
+                                <i class="material-icons custom">question_answer</i>
+                                <p>You should know the jobs that are available in information technology, software
+                                    development. These jobs change every few years as information technology is updated!
+                                </p>
+                                <p>The platforms and atrategies used change accordingly, but there is a base set of
+                                    terms you should understand as you prepare for your career in the industry.</p>
+                            </td>
+                            </tr>
+
+                            <tr>
+                                <td class="infocell" colspan="2">Methodologies</td>
+                            </tr>
+                            <td><br>
+
+                                <i class="material-icons custom">stars</i>
+                                Agile
+                                <br>
+                                <i class="material-icons custom">stars</i>
+                                Sprint, Sprint Master
+                                <br>
+
+                            </td>
+                            <td>
+
+
+                                <p>In response to the need to professionalize software development, a group of industry
+                                    experts met in the mountains of Colorado and authored the <a
+                                        href="https://agilemanifesto.org/">Agile Manifesto</a>. This introduced a common
+                                    sense strategy for developing software, called <button type="button"
+                                        data-placement="top" class="btn btn-info" id="agilepopup"
+                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="Agile"
+                                        html="true">Agile</button>. The Agile Methodology defines
+                                    a framework called <button type="button" data-placement="top" class="btn btn-info"
+                                        id="scrumpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Scrum" html="true">Scrum</button>, describing steps in
+                                    development called <button type="button" data-placement="top" class="btn btn-info"
+                                        id="sprintpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Scrum Sprint" html="true">sprints</button>, with a leader called a
+                                    <button type="button" data-placement="top" class="btn btn-info"
+                                        id="scrummasterpopup" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                        title="Scrum Master" html="true">Scrum Master</button>.
+                                </p>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Platforms and languages</td>
+                            </tr>
+                            <td><br>
+
+                                <i class="material-icons custom">stars</i>
+                                IDE
+                                <br>
+                                <i class="material-icons custom">stars</i>
+                                API, SDK
+                                <br>
+                                <i class="material-icons custom">stars</i>
+                                Formal Methods
+                                <br>
+                                <i class="material-icons custom">stars</i>
+                                Model-View-Controller
+                                <br>
+                            </td>
+                            <td>
+
+
+                                <p>Specific strategies for developing software are termed <button type="button"
+                                        data-placement="top" class="btn btn-info" id="formalmethodspopup"
+                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="Formal Methods"
+                                        html="true">formal methods</button>.
+                                    These formal methods might take the form of an architectural pattern like
+                                    <button type="button" data-placement="top" class="btn btn-info" id="mvcpopup"
+                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="Scrum"
+                                        html="true">MVC</button>.
+                                </p>
+                                <p> Developing, testing and modifying code is supported by a platform that allows a
+                                    developer to do all 3 of these. Such a platform is called an
+                                    <button type="button" data-placement="top" class="btn btn-info" id="idepopup"
+                                        data-bs-toggle="popover" data-bs-trigger="hover focus" title="IDE"
+                                        html="true">IDE</button>. Examples include Visual Studio, Visual Studio Code,
+                                    NetBeans.
+
+                                </p>
+                                <p>Better than building software entirely from scratch, a library of
+                                    reusable code, <button type="button" data-placement="top" class="btn btn-info"
+                                        id="apipopup" data-bs-toggle="popover" data-bs-trigger="hover focus" title="API"
+                                        html="true">API</button>,
+                                    is often available. Languages often come with their own set of
+                                    tools for deveoping code, an <button type="button" data-placement="top"
+                                        class="btn btn-info" id="sdkpopup" data-bs-toggle="popover"
+                                        data-bs-trigger="hover focus" title="SDK" html="true">SDK</button>, like the
+                                    Java SDK or J(Java)DK. </p>
+                            </td>
+                            </tr>
+                            <tr>
+                                <td class="infocell" colspan="2">Making Code</td>
+                            </tr>
+                            <tr>
+                                <td><i class="material-icons custom">
+                                        stars</i>Software Engineering, Developer, Programmer,
+                                    Systems Developer, web
+                                    Developer, Database Administrator, Full Stack Developer, Front-end Developer, Mobile
+                                    Developer
+
+                                </td>
+                                <td><i class="material-icons custom">question_answer</i>
+                                    <p>
+                                        A software developer creates the code that runs the world. Software development
+                                        can take many forms.
+                                        forms. A
+                                        <button type="button" class="btn btn-info" id="frontenddeveloperpopup"
+                                            data-bs-toggle="popover" data-bs-trigger="hover focus"
+                                            title="Front-end Developer" html="true" data-placement="top">front-end
+                                            developer</button>
+                                        creates interfaces, whereas a
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="backenddeveloperpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Back-end Developer"
+                                            html="true">back-end developer</button> works on areas of the software
+                                        the user cannot see.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="fullstackdeveloperpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Full-stack Developer"
+                                            html="true">Full-stack developers</button>
+                                        work on all aspects of the code.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="webdeveloperpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Web developers" html="true">Web
+                                            developers</button>
+                                        specialize in creating web sites.
+                                    </p>
+                                    <p>
+
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="embeddedsystemsdeveloperpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Embedded-systems Developer"
+                                            html="true">Embedded systems developers</button> create code that runs on
+                                        devices and microcontrollers.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="devopsengineerpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="DevOps Engineer" html="true">DevOps
+                                            engineers</button> work on platforms to deploy software,
+                                        and <button type="button" data-placement="top" class="btn btn-info"
+                                            id="testengineerpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Test Engineer" html="true">test
+                                            engineers</button> are responsible for making sure that the software is
+                                        robust.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="datascientistpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Data Scientist" html="true">Data
+                                            Scientists</button> and
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="bigdatadeveloperpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="Big Data Developer" html="true">Big
+                                            Data developers</button>create
+                                        code to analyses data.
+                                        <button type="button" data-placement="top" class="btn btn-info"
+                                            id="securitydeveloperpopup" data-bs-toggle="popover"
+                                            data-bs-trigger="hover focus" title="DevOps Developer" html="true">Security
+                                            developers</button> test for vulnerabilities in a software system.
+                                    </p>
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!---- Links and popups -->
+    <div id="frontenddevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Specializes in visual user interfaces, aesthetics and layouts.
+            </p>
+            <p>
+                Front-end development skills include the design of user interface (UI) and user experience (UX), CSS,
+                JavaScript, HTML, and a growing collection of UI frameworks.
+            </p>
+        </div>
+    </div>
+
+    <div id="backenddevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Specializes in the design, implementation, logic, performance and scalability of a piece
+                of software or system running on machines that are remote from the end-user.
+            </p>
+            <p>A back-end developer works with programming languages such as Java, C, C++, Ruby, Perl, Python, Scala,
+                Go, etc. Back-end developers often need to integrate with a vast array of services such as databases and
+                data storage systems.</p>
+        </div>
+    </div>
+
+    <div id="fullstackdevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                This is a developer that does both front-end and back-end work. He or she has the skills required to
+                create a fully functional web application.
+            </p>
+        </div>
+    </div>
+
+    <div id="embeddedsystemsdevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                work with hardware that isn’t commonly classified as computers. For example, microcontrollers, real-time
+                systems, electronic interfaces, set-top boxes, consumer devices, iOT devices, hardware drivers, and
+                serial data transmission fall into this category.
+            </p>
+            <p>
+                Embedded developers often work with languages such as C, C++, Assembly, Java or proprietary
+                technologies, frameworks, and toolkits.
+                character.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div id="devopsengineercontent" style="display: none">
+        <div>
+
+            <p>
+                Works with technologies required for development of systems to
+                build, deploy, integrate and administer back-end software
+                and distributed systems.
+            </p>
+            <p>
+                Technologies used by DevOps Engineers include Kubernetes, Docker.
+
+            </p>
+        </div>
+    </div>
+
+
+
+    <div id="testengineercontent" style="display: none">
+        <div>
+
+            <p>
+                A Software Development Engineer in Test (SDET) is responsible for
+                writing software to validate the quality of software systems. They create automated tests, tools and
+                systems to make sure that products and processes run as expected.
+
+                Technologies used by SDETs include Python, Ruby.
+            </p>
+        </div>
+    </div>
+
+
+    <div id="datascientistcontent" style="display: none">
+        <div>
+
+            <p>
+                Writes software programs to analyze data sets. They are often in charge of statistical analysis, machine
+                learning, data visualization, and predictive modeling.
+
+                Languages used by data scientists often include SQL, R, and Python.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+
+
+    <div id="bigdatadevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Awrites software programs to store and retrieve vast amounts of data in systems such as data warehouses,
+                ETL (Extract Transform Load) systems, relational databases, data lakes management systems, etc.
+
+                A big data developer is often familiar with frameworks and systems for distributed storage and
+                processing of vast amounts of data such as MapReduce, Hadoop, and Spark. Languages used by Big Data
+                Developers include SQL, Java, Python, and R.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="securitydevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Specializes in creating systems, methods, and procedures to test the security of a software system and
+                exploit and fix security flaws. This type of developer often works as <em>white-hat</em> ethical hacker
+                and
+                attempts to penetrate systems to discover vulnerabilities.
+
+                Security developers most often write tools in scripting languages such as Python and Ruby and understand
+                in details the many patterns used to attack software systems.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="webdevelopercontent" style="display: none">
+        <div>
+
+            <p>
+                Specialize in creating websites. Either front-end
+                developers, back-end developers or full-stack developers.
+
+                Web-Development became a common way to enter software engineering.
+                It has a low entry-point, basic HTML and CSS knowledge. With only a
+                few months of experience, an entry-level web developer can start
+                producing code that ships to production
+                systems.
+
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+
+    <div id="agilecontent" style="display: none">
+        <div>
+
+            <p>
+                Iterative approach to project management and software development.
+                Helps teams deliver value to
+                customers faster and more reliably.
+                Agile teams deliver work in small, measurable increments.
+                Requirements, plans, and results are
+                evaluated continuously to respond to change quickly.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="scrumcontent" style="display: none">
+        <div>
+
+            <p>
+                Name comes from rugby! Framework that supports teams working together. Describes a set of meetings,
+                tools, and roles that work in concert to help teams structure and manage their work.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="scrummastercontent" style="display: none">
+        <div>
+
+            <p>
+                Helps to facilitate scrum to the larger team by ensuring the scrum framework is followed.
+
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="sprintcontent" style="display: none">
+        <div>
+
+            <p>
+                Short time period when a scrum team works to complete a set amount of work. Sprints are at the
+                very heart of scrum and agile methodologies, and getting sprints right helps
+                an agile team ship
+                better software with fewer headaches.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="programstatementcontent" style="display: none">
+        <div>
+
+            <p>
+                An instruction written in a programming language, like a conditional, an assignment, a loop.
+
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="keywordcontent" style="display: none">
+        <div>
+
+            <p>
+                A special word that is defined and regcognized by the programming language to be a part of it's
+                instruction set. Keywords like <em>if</em> and <em>while</em> convey conditional logic and iteration in
+                a given programming language, like C#, Python, Java.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="syntaxcontent" style="display: none">
+        <div>
+
+            <p>
+                The structure and rules that define how the programming language is to be correctly used. For example,
+            <div>
+                &nbsp;&nbsp;&nbsp;if (x > 10)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x * 2;
+            </div>
+            could not be written as,
+            <div>
+                &nbsp;&nbsp;&nbsp;if (x > 10<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x - x * 2;
+            </div>
+            as this would result in a syntax error because of the missing closing parenthese, and the use of the ==
+            equality operator instead of the =, assignment operator.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+
+    <div id="semanticscontent" style="display: none">
+        <div>
+
+            <p>
+                The meaning of or intended impact of, or the logic behind
+                a set of program instructions. For example, if variable x should be set to double it's value if x is
+                greater than or equal to 10,
+            </p>
+            <p>
+            <div>
+                &nbsp;&nbsp;&nbsp;if (x > 10)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x * 2;
+            </div>
+            would reflect a semantic error because <em>></em> is being used instead of <em>>=</em>,
+            <div>
+                &nbsp;&nbsp;&nbsp;if (x >= 10)<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x = x * 2;
+            </div>
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="variablecontent" style="display: none">
+        <div>
+
+            <p>
+                Named location in computer memory.like <em>count</em>, below.
+            </p>
+            <p>
+                int count = 7;
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="constantcontent" style="display: none">
+        <div>
+
+            <p>
+                named locationin computer memory, cannot be reassigned after declaration. Typically in upper-case.
+            </p>
+            <p>
+                const MAX_ATTEMPTS = 3;
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="debuggingcontent" style="display: none">
+        <div>
+
+            <p>
+                Process of figuring out errors in code. Attributed to Admiral Grace Hopper in the 1940s, when moth found
+                between relays of computer system!
+            </p>
+
+
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="formalmethodscontent" style="display: none">
+        <div>
+
+            <p>
+                Formal methods are system design techniques that use specified scientific models to build
+                software and hardware systems.
+            </p>
+
+
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <div id="idecontent" style="display: none">
+        <div>
+
+            <p>
+                Integrated Development Environment, a framework on which to create, test and modify software projects.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="mvccontent" style="display: none">
+        <div>
+
+            <p>
+                MVC is a design pattern used to separate user-interface (view), data (model), and application logic
+                (controller). The big idea is <em>separation of concerns</em>.
+            </p>
+            <p>
+                Using the MVC pattern for websites, requests are routed to a Controller that is responsible for working
+                with the Model to perform actions and/or retrieve data. The Controller chooses the View to display and
+                provides it with the Model. The View renders the final page, based on the data in the Model.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <div id="apicontent" style="display: none">
+        <div>
+
+            <p>
+                Applications Programming Interface, a library of software that is reusable and can be imported a
+                software project.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="sdkcontent" style="display: none">
+        <div>
+
+            <p>
+                Standard Development Kit, a set of software utilities that is provided to assist with developing
+                software. Example, the Java development Kit, JDK.
+            </p>
+
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="programminglanguagecontent" style="display: none">
+        <div>
+
+            <p>
+                A set of prescribed instructions that are translated to codes that the computer can use as directives to
+                do tasks.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="compilercontent" style="display: none">
+        <div>
+
+            <p>
+                Software that translates source code in a programming language, to language teh computer can understand
+                - and does so all at the one time,
+                including all instructions in the source code.</p>
+            <p>C is an example of a compiled language.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="interpretercontent" style="display: none">
+        <div>
+
+            <p>Software that translates source code into code the computer can understand, and does so statement per
+                statement in sequential fashion.</p>
+            <p>Python is an example of an interpreted language.</p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="executablecodecontent" style="display: none">
+        <div>
+
+            <p>This is software in a form that can be run on a computer. executable code maps directly to machine
+                language, which is a set of instructions that have been made accessible to the processor.
+            </p>
+            <p>Executable code is all set to run on the computer.</p>
+
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <div id="objectcodecontent" style="display: none">
+        <div>
+
+            <p>Object code is code that has been transformed from source code into code that is almost ready to run on a
+                computer. The only step remaining is a linkage one, the object code has to be linked with other sets of
+                object code to form a complete program.
+
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="flowchartingcontent" style="display: none">
+        <div>
+            <p>A pictorial (using specific symbols) representation of an algorithm, the flow of a computer program.
+
+            </p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="structuredenglishcontent" style="display: none">
+        <div>
+
+            <p>The use of a natural language (like English) in structured way, to detail the succession of steps in a
+                computer program.
+            </p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="pseudocodecontent" style="display: none">
+        <div>
+
+            <p>The use of a natural language(like English) in a way that mirrors programing, to convey the steps of an
+                algorithm or program.
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="firstgenerationlanguagecontent" style="display: none">
+        <div>
+            <p>This category of language was used to program early computers as a sequence of instructions coming from
+                on/off switches.</p>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="secondgenerationlanguagecontent" style="display: none">
+        <div>
+            <p> A step further in the evolution of computer programming languages, this category reflects the
+                instruction set recognized by processors and microchips - assembler or assembly language.</p>
+
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="thirdgenerationlanguagecontent" style="display: none">
+        <div>
+
+            <p>
+                These languages shifted to being more human readable and user friendly than machine code of first
+                generation languages and assembler of second generation languages. Examples include C, Python, Java.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <div id="fourthgenerationlanguagecontent" style="display: none">
+        <div>
+
+            <p>
+                These are languages specialized to specific operations, like accessing databases. An example
+                is SQL,
+                although some third generation languages (like Python) encompass fourth generation abilities.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="fifthgenerationlanguagecontent" style="display: none">
+        <div>
+
+            <p>
+                Used in the development of artificial intelligence.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="sourcecodecontent" style="display: none">
+        <div>
+
+            <p>
+                A series of program code instructions, written in a programming language and following the syntax of the
+                language and semantics of the requirements.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="spamcontent" style="display: none">
+        <div>
+
+            <p>
+                Digital junk mail, sent in bulk over the internet or other network.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="emailscamcontent" style="display: none">
+        <div>
+
+            <p>
+                An illegitimite enticement to part with money or information, starting from an e-mail.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="advancefeefraudcontent" style="display: none">
+        <div>
+
+            <p>
+                A fraudulent claim of greater benefit once an up-front fee is paid.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="phishingcontent" style="display: none">
+        <div>
+
+            <p>
+                Fraudulent practice of enticing victims to enter personal information. Can be made to look like a
+                request from a legitimate and trusted company.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="spearphishingcontent" style="display: none">
+        <div>
+
+            <p>
+                Fraudulent practice of sending emails from a trusted sender
+                in order to induce
+                targeted individuals to reveal confidential information.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="pharmingcontent" style="display: none">
+        <div>
+
+            <p>
+                Mash-up of farming and phishing, a social engineering attack in which a
+                web site's information is
+                manipulated, users are redirected to a fake web site and information is stolen.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="rogueantiviruscontent" style="display: none">
+        <div>
+
+            <p>
+                Rogue security software, or <em>scareware</em>, fools victims
+                into installing malware, divulging confidential information.
+                Rogue AV software mimics the look and feel of
+                legitimate security software programs.
+                Once installed, it claims to detect a
+                large number of nonexistent threats so users will pay for the
+                <em>full version</em> of the software.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!------------------------------------------------------------>
+    <div id="pupcontent" style="display: none">
+        <div>
+
+            <p>
+                Potentially Unwanted Program/Application. Software a user did not mean to download.
+            </p>
+        </div>
+    </div>
+    <!------------------------------------------------------------>
+    <!----------------------------------------------------------------------------->
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#hexchartbutton').popover({
+                html: true,
+                content: function () {
+                    return $('#hexchart').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#binnumbutton').popover({
+                html: true,
+                content: function () {
+                    return $('#binnum').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#frontenddeveloperpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#frontenddevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#backenddeveloperpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#backenddevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#fullstackdeveloperpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#fullstackdevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#embeddedsystemsdeveloperpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#embeddedsystemsdevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#devopsengineerpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#devopsengineercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#testengineerpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#testengineercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#datascientistpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#datascientistcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#bigdatadeveloperpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#bigdatadevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#securitydeveloperpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#securitydevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#webdeveloperpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#webdevelopercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#agilepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#agilecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#scrumpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#scrumcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#scrummasterpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#scrummastercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#sprintpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#sprintcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#programstatementpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#programstatementcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#keywordpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#keywordcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#syntaxpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#syntaxcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#semanticspopup').popover({
+                html: true,
+                content: function () {
+                    return $('#semanticscontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#syntaxerrorpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#syntaxerrorcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#variablepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#variablecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#debuggingpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#debuggingcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#constantpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#constantcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#idepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#idecontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#mvcpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#mvccontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#formalmethodspopup').popover({
+                html: true,
+                content: function () {
+                    return $('#formalmethodscontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#apipopup').popover({
+                html: true,
+                content: function () {
+                    return $('#apicontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#sdkpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#sdkcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#programminglanguagepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#programminglanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('#compilerpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#compilercontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#interpreterpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#interpretercontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#executablecodepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#executablecodecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#objectcodepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#objectcodecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#flowchartingpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#flowchartingcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#structuredenglishpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#structuredenglishcontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#pseudocodepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#pseudocodecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#firstgenerationlanguagepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#firstgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#secondgenerationlanguagepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#secondgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#thirdgenerationlanguagepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#thirdgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#fourthgenerationlanguagepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#fourthgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#fifthgenerationlanguagepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#fifthgenerationlanguagecontent').html();
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#sourcecodepopup').popover({
+                html: true,
+                content: function () {
+                    return $('#sourcecodecontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#mitmpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#mitmcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#eviltwinpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#eviltwincontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#addressspoofingpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#addressspoofingcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#digitalcertificatehackpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#digitalcertificatehackcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#phishingpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#phishingcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#spearphishingpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#spearphishingcontent').html();
+                }
+            });
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#pharmingpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#pharmingcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#rogueantiviruspopup').popover({
+                html: true,
+                content: function () {
+                    return $('#rogueantiviruscontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#puppopup').popover({
+                html: true,
+                content: function () {
+                    return $('#pupcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#puapopup').popover({
+                html: true,
+                content: function () {
+                    return $('#pupcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#ipaddrlookuppopup').popover({
+                html: true,
+                content: function () {
+                    return $('#ipaddrlookupcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#advancefeefraudpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#advancefeefraudcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#emailscampopup').popover({
+                html: true,
+                content: function () {
+                    return $('#emailscamcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#imsicatcherpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#imsicatchercontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#spampopup').popover({
+                html: true,
+                content: function () {
+                    return $('#spamcontent').html();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#socialengineeringpopup').popover({
+                html: true,
+                content: function () {
+                    return $('#socialengineeringcontent').html();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
